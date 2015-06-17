@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE 線上簽核 SYSTEM "99_sign_utf8.dtd">
+<!--	99_sign_utf8.dtd     線上簽核(簽核電子檔)    2010.10.10  -->
+<!--
+991022v11
+彙併辦及無解併之子文(1)簽核電子檔(0970000023)
+一、參考說明
+1.本範案例為示意範例,案例所使用之編號、序號、hash值編碼均為參考用.
+
+二、彙辦範例說明 : (含單頁式文稿頁面檔)此份簽核電子檔為母文
+1.共3份來文進行彙辦,除母文產簽核電子檔外,另2份子文亦產生簽核電子檔
+2.過程中進行解併1份子文
+母文分五階段分述如下(來文1份(含附件)+創簽)
+1.	承辦人：進行送呈，文件清單如下：
+（1）、	來文：電子來文(1個本文檔+1個電子檔附件)(新增2個檔案)
+（2）、	創簽:1份 (新增1個檔案)
+（3）、	其它說明：共新增3個檔,原始檔編號自0~2,檔案清單共3個檔案。
+2.	科長：進行退文承辦人進行解併，解併需退回承辦人進行解併
+（1）、	批示解併1份子文。
+3.	承辦人：進行解併子文：
+（1）、	解併子文2(0970000024)
+4.	科長：進行簽核，文件異動如下：
+（1）、	批示同意。
+5.	高分:進行決行,產生文稿頁面檔(共新增1個檔,原始檔編號自0~3,檔案清單共4個檔案。)
+子文簽核電子檔採「子文簽核文件夾」共2份,第一關產生時應加簽,後續流程如無解併辦可不加簽.如有需解併辦應回承辦人重新辦理.
+-->
+<線上簽核 Id="sign_09655588883" >
+  <線上簽核流程 Id="FlowInfo">
+	<簽核流程 Id="FLOW_承辦產生子文1" 異動別="彙併辦"/>
+  </線上簽核流程>
+  <線上簽核資訊 Id="signInfo" >
+	<簽核點定義 URI="#FLOW_承辦產生子文1" Id="sign_承辦">   
+	<Signature Id="ds_user_0">
+		<SignedInfo>
+		  <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315">
+		  </CanonicalizationMethod>
+		  <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1">
+		  </SignatureMethod>
+		  <Reference URI="來文0970000023.di">
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1">
+			</DigestMethod>
+			<DigestValue>ounPg12wSr57UIttAFdWk1tEDaU=</DigestValue>
+		  </Reference>
+		  <Reference URI="來文附件0970000023.doc">		  
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1">
+			</DigestMethod>
+			<DigestValue>ounPg12eer57UI3CAFdWk1tEDaU=</DigestValue>
+		  </Reference>			
+		  <Reference URI="#Sign_info_0">
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1">
+			</DigestMethod>
+			<DigestValue>FUuygSacYTRmPWVagptNOjbNeOc=</DigestValue>
+		  </Reference>
+		</SignedInfo>		
+		<SignatureValue>WlWWF6gg4kqUNZdjc/m/ssy07b/Fx3zty3mjyCJsD6y0KahisoiBL3Q/KwSQEpuNQPzKFvYr/jLY
+WaY7QZK66PGL+ahujy9GrVlgPV6/bpFXGN/+8yha7XoXB9Zu+uYH3KY5VzUOaGw9khw5Vp/oLO49
+r4U+5voNDyWMaaxPTDk=</SignatureValue>
+		<KeyInfo>
+		  <X509Data>
+			<X509Certificate>MIID6jCCAtKgAwIBAgIRAO298dbIcHCJGAdVdy0lD5cwDQYJKoZIhvcNAQEFBQAwSjELMAkGA1UE
+BhMCVFcxEjAQBgNVBAoMCeihjOaUv+mZojEnMCUGA1UECwwe5pS/5bqc5ris6Kmm5oaR6K2J566h
+55CG5Lit5b+DMB4XDTA3MDUyNzA3NTQyMVoXDTA3MDcyNjA3NTQyMVowQzELMAkGA1UEBhMCVFcx
+GTAXBgNVBAMMEOa4rOippuiHqueEtuS6ujExGTAXBgNVBAUTEDJmZTQwYzI2NzkwOWM3ODYwgZ8w
+DQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALh6xWv1i9PATLI/VYdiDjJukkCLibZTfstZuAHvW8PM
+YSQfCBmr49B8UwUmVkCLs9OBL0Kb3ypN0xZtTzEptj8X0oF6g2Z56OSW2bllaL5bjRPAiPmFijov
++vn2lOMvcCsoI3u+ru5VS9AnikcFr2RkTvlIchigC7Umui1NGrbNAgMBAAGjggFUMIIBUDBGBgNV
+HR8EPzA9MDugOaA3hjVodHRwOi8vZ3Rlc3RjYS5uYXQuZ292LnR3L3JlcG9zaXRvcnkvQ1JML2Nv
+bXBsZXRlLmNybDBTBggrBgEFBQcBAQRHMEUwQwYIKwYBBQUHMAKGN2h0dHA6Ly9ndGVzdGNhLm5h
+dC5nb3YudHcvcmVwb3NpdG9yeS9Jc3N1ZWRUb1RoaXNDQS5wN2IwFAYDVR0gBA0wCzAJBgdghnZl
+AAMAMC8GA1UdCQQoMCYwFQYHYIZ2AWQCATEKBghghnYBZAMBATANBgdghnYBZAIzMQIMADAdBgNV
+HQ4EFgQUQqMk8mVsvXAsT9ol4d8iUzn4/QQwGgYDVR0RBBMwEYEPdGVzdEBjaHQuY29tLnR3MA4G
+A1UdDwEB/wQEAwIHgDAfBgNVHSMEGDAWgBRL9kp3aNOUxOO1YNwOG++punv2UzANBgkqhkiG9w0B
+AQUFAAOCAQEAiWtEt+N5hc+cPN9sFerhbKmwYZTERG+ov6+P1kTQxSSEabOWVO0yvzFQgg5lXVa2
+NjC4EEBSPL/y9rsCj0NdrEMocovZf1/OGeU8WuihgG4/OrgvqljbFxaGrOt9F8KIMw1gDzfLV479
+nHe0HDkUzIZVgZelHkwfY47Mlgd/S1kUP1ygnX3oHph92Y3QGKFNHF9HnZsmmD3Wsv9mtw3dYxI2
+rH/UE49txRIVZU/F/qzyx57FmUB2RuDQ/xPDUv30IJsXfAtpNtkcsPvJOO9220RMvXYMsyQ21sHD
+4Q4KfT7kwxUcjhLPuYfUrIqzhNynMAfVF7EJzZI5JFrhVkPZ5g==</X509Certificate>
+		  </X509Data>
+		</KeyInfo>
+	  </Signature>
+	  <Object Id="Sign_info_0">
+		<異動資訊>		
+		  <簽核人員>
+		    <單位>規劃科</單位>
+			<職稱>科員</職稱>
+			<姓名>王小民</姓名>
+			<帳號>CAESAR1</帳號>
+			<角色>承辦人員</角色>
+		  </簽核人員>
+		  <異動別>呈核</異動別>
+		  <簽核意見>3份來文彙辦處理</簽核意見>
+		  <簽核時間>09605271823</簽核時間>		 
+		</異動資訊>
+		<簽核資訊>
+		   <來文文件夾  Id="iDOC_0001" 產生時間="09605271823">
+			  <來文清單 來文數="1">
+			   <來文 格式="電子" 序號="0" 產生時間="09605271823">
+			     <來文字號>0970000023</來文字號>
+				 <來文類型>函</來文類型>
+				 <電子來文 原始檔序號="0" >
+				 <附件清單 附件數="1">	
+			      <附件 格式="電子文件" 序號="0" 產生時間="09605271823" >
+			       <名稱>來文附件一</名稱>
+				   <附件類型>WORD</附件類型>
+				   <電子檔格式附件 原始檔序號="1" ></電子檔格式附件>
+				  </附件>
+			     </附件清單 >
+				 </電子來文>				 
+			   </來文>			   
+			 </來文清單>
+		    </來文文件夾>		  
+		   <子文簽核文件夾  Id="sDOC_0002" 產生時間="09605271823">
+			 <母文>0970000022</母文> 
+			 <檔案清單 檔案數="2" >		
+			  <電子檔案資訊 原始檔序號="0" 序號="0"  產生時間="09605271823">
+				<檔案名稱>來文0970000023.di</檔案名稱>
+				<檔案大小>103</檔案大小>
+				<檔案格式>DI</檔案格式>
+			  </電子檔案資訊>
+			  <電子檔案資訊 原始檔序號="1" 序號="1"  產生時間="09605271823">
+				<檔案名稱>來文附件0970000023.doc</檔案名稱>
+				<檔案大小>146</檔案大小>
+				<檔案格式>WORD</檔案格式>
+			  </電子檔案資訊> 
+			 </檔案清單>
+		   </子文簽核文件夾>
+		</簽核資訊>
+	  </Object>
+	</簽核點定義>	
+  </線上簽核資訊>
+</線上簽核>

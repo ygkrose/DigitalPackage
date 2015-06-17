@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DCP2011">
+</Property><Property Name="方案檔" Value="D:\WEBOE\拆版專用\DigitalSealed\DCP2011.sln">
+</Property><Property Name="使用者選項檔" Value="D:\WEBOE\拆版專用\DigitalSealed\DCP2011.suo">
+</Property><Property Name="Date" Value="2011年2月11日">
+</Property><Property Name="Time" Value="下午 15:03">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="DCP2011.sln" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\DCP2011.sln">
+</Event><Event ErrorLevel="0" Project="" Source="DCP2011.suo" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\DCP2011.suo">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="DigitalSealed.csproj" Description="專案檔已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\DigitalSealed.csproj">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="DigitalSealed.csproj.user" Description="專案使用者檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\DigitalSealed.csproj.user">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="AssemblyInfo1.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\AssemblyInfo1.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="AttachmentsDesc\AttachStyle.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\AttachmentsDesc\AttachStyle.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="AttachmentsDesc\AttsList.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\AttachmentsDesc\AttsList.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="AttachmentsDesc\IAttachment.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\AttachmentsDesc\IAttachment.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="AttachmentsDesc\PhysicalAtt.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\AttachmentsDesc\PhysicalAtt.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="ConstVar.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\ConstVar.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="AttachmentsDesc\ElecAtt.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\AttachmentsDesc\ElecAtt.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\Object\ObjectTag.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\Object\ObjectTag.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\ReceivedDoc\ReceivedDoc.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\ReceivedDoc\ReceivedDoc.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\Signature\SignatureTag.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\Signature\SignatureTag.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\DocPageFile.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\DocPageFile.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\FilesList.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\FilesList.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignFlow\FlowInfo.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignFlow\FlowInfo.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\Object\ModifyInfo\ModifyInfo.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\Object\ModifyInfo\ModifyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\Signature\Signature.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\Signature\Signature.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\MergeFileList.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\MergeFileList.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\SignDocFolder.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\SignDocFolder.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\SignDocList.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\SignDocList.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\SignOnline.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\SignOnline.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignInfo.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignInfo.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="SignOnline\OnlineSignInfo\SignPointDef\SignPointDef.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\SignOnline\OnlineSignInfo\SignPointDef\SignPointDef.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="Tools\ImageConverter.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\Tools\ImageConverter.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="Tools\GZip.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\Tools\GZip.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="Tools\xmlTool.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\Tools\xmlTool.cs">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="ClassDiagram.cd" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\ClassDiagram.cd">
+</Event><Event ErrorLevel="1" Project="DigitalSealed" Source="DigitalSealed.csproj" Description="您的專案是以 .NET Framework 2.0 或 3.0 為目標。如果您的專案使用需要較新版 .NET Framework 的組件，專案建置將會失敗。您可以變更 .NET Framework 版本，方法是按一下專案功能表上的 [屬性]，然後在 [.NET Framework] 下拉式方塊中選取新的版本 (在 Visual Basic 中，它的位置是在按一下 [進階編譯選項...] 按鈕時顯示的 [編譯] 索引標籤上)。">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="DigitalSealed.csproj" Description="專案轉換成功">
+</Event><Event ErrorLevel="3" Project="DigitalSealed" Source="DigitalSealed.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\testDigitalSealed.csproj" Description="專案檔已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\testDigitalSealed.csproj">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\testDigitalSealed.csproj.user" Description="專案使用者檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\testDigitalSealed.csproj.user">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\Form1.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\Form1.cs">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\Form1.Designer.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\Program.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\Program.cs">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\Properties\AssemblyInfo.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\Properties\Resources.Designer.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\Properties\Settings.Designer.cs" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\bin\Debug\函1來文-0970000022.di" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\bin\Debug\函1來文-0970000022.di">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\bin\Debug\函1來文附件-0970000022.doc" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\bin\Debug\函1來文附件-0970000022.doc">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\bin\Debug\函稿附件1v1.doc" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\bin\Debug\函稿附件1v1.doc">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\bin\Debug\稿98110001v1.di" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\bin\Debug\稿98110001v1.di">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\bin\Debug\簽98110001v1.di" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\bin\Debug\簽98110001v1.di">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\Properties\Settings.settings" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\bin\Debug\testXML.xml" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\bin\Debug\testXML.xml">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\Form1.resx" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\Form1.resx">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\Properties\Resources.resx" Description="檔案已成功備份為 D:\WEBOE\拆版專用\DigitalSealed\Backup\testDigitalSealed\testDigitalSealed\Properties\Resources.resx">
+</Event><Event ErrorLevel="1" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\testDigitalSealed.csproj" Description="您的專案是以 .NET Framework 2.0 或 3.0 為目標。如果您的專案使用需要較新版 .NET Framework 的組件，專案建置將會失敗。您可以變更 .NET Framework 版本，方法是按一下專案功能表上的 [屬性]，然後在 [.NET Framework] 下拉式方塊中選取新的版本 (在 Visual Basic 中，它的位置是在按一下 [進階編譯選項...] 按鈕時顯示的 [編譯] 索引標籤上)。">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\testDigitalSealed.csproj" Description="專案轉換成功">
+</Event><Event ErrorLevel="3" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\testDigitalSealed.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="DCP2011.sln" Description="方案轉換成功">
+</Event><Event ErrorLevel="3" Project="" Source="DCP2011.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DigitalSealed" Source="DigitalSealed.csproj" Description="掃描完成: 專案檔不需要升級。">
+</Event><Event ErrorLevel="0" Project="testDigitalSealed" Source="testDigitalSealed\testDigitalSealed\testDigitalSealed.csproj" Description="掃描完成: 專案檔不需要升級。">
+</Event></UpgradeLog>

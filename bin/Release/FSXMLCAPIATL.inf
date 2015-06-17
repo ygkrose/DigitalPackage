@@ -1,0 +1,8 @@
+[Add.Code] 
+FSXMLCAPIATL.dll=FSXMLCAPIATL.dll 
+ 
+[FSXMLCAPIATL.dll] 
+file-win32-x86=thiscab 
+clsid={95B7355A-15B6-43B5-8CA9-1A33ADE5B32D} 
+RegisterServer=yes 
+FileVersion=1,6,11,804 

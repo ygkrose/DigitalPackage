@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><!DOCTYPE 線上簽核 SYSTEM "99_sign_utf8.dtd"[]><線上簽核 Id="sign_1000000016"><線上簽核流程 Id="FlowInfo"><簽核流程 Id="Flow_14_Jack_呈核" 異動別="呈核" /></線上簽核流程><線上簽核資訊 Id="SignInfo"><簽核點定義 URI="#Flow_14_Jack_呈核" Id="sign_Flow_14_Jack_呈核"><Signature Id="ds_Flow_14_Jack_呈核"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="200707020001.di"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue></Reference><Reference URI="100JP00016V1.di"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue></Reference><Reference URI="公司OPV1.txt"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue></Reference><Reference URI="#Sign_info_Flow_14_Jack_呈核"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>v9nMbnioZVmUdALfWmGSaRwus6Q=</DigestValue></Reference></SignedInfo><SignatureValue>ICp9is/c0PRgRq/xvjK6k27LlNIuiju3G2tHAQ4co47u4V5oSjTUnfy4ULIz/CJ6uRsNvKx6AKw8qArcYpeS1Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=wrakevinjoe</X509SubjectName><X509Certificate>MIIEVzCCBAGgAwIBAgIKWbC5MQABAAALOjANBgkqhkiG9w0BAQUFADAhMQswCQYD
+VQQGEwJUVzESMBAGA1UEAxMJSXNzdWluZ0NBMB4XDTEwMTAxMTA4NTQyNloXDTEx
+MTAxMTA4NTQyNlowFjEUMBIGA1UEAxMLd3Jha2V2aW5qb2UwXDANBgkqhkiG9w0B
+AQEFAANLADBIAkEA0x4wQtLNtpqCDtDSDU1GTXe8CQ9sJ0veWkXaFXUJXi3LyBqP
+YNsnSKl/ycxWRmWjWD7QTcXczw/MjRJShQJQVwIDAQABo4IDJDCCAyAwCwYDVR0P
+BAQDAgWgMCkGCSsGAQQBgjcUAgQcHhoAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8A
+cjAdBgNVHQ4EFgQUxkB4w6bny8yC5hXxP3LUjkkGEz4wQQYDVR0jBDowOIAU4mD5
+MABShfgjqjjQFEY22ESrgrqhFKQSMBAxDjAMBgNVBAMTBVdSQUNBggp+MD2oAAAA
+AAANMIIBAQYDVR0fBIH5MIH2MIG6oIG3oIG0hoGxbGRhcDovLy9DTj1Jc3N1aW5n
+Q0EsQ049Y2Etc3ZyLENOPUNEUCxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxD
+Tj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPXdjYSxEQz1nb3YsREM9dHc/
+Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdGNsYXNzPWNSTERp
+c3RyaWJ1dGlvblBvaW50MDegNaAzhjFodHRwOi8vY2Etc3ZyLndjYS5nb3YudHcv
+Q2VydEVucm9sbC9Jc3N1aW5nQ0EuY3JsMIIBEwYIKwYBBQUHAQEEggEFMIIBATCB
+qgYIKwYBBQUHMAKGgZ1sZGFwOi8vL0NOPUlzc3VpbmdDQSxDTj1BSUEsQ049UHVi
+bGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlv
+bixEQz13Y2EsREM9Z292LERDPXR3P2NBQ2VydGlmaWNhdGU/YmFzZT9vYmplY3Rj
+bGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5MFIGCCsGAQUFBzAChkZodHRwOi8v
+Y2Etc3ZyLndjYS5nb3YudHcvQ2VydEVucm9sbC9jYS1zdnIud2NhLmdvdi50d19J
+c3N1aW5nQ0EoMSkuY3J0MDUGA1UdJQQuMCwGCisGAQQBgjcKAwEGCisGAQQBgjcK
+AwQGCCsGAQUFBwMEBggrBgEFBQcDAjAxBgNVHREEKjAooCYGCisGAQQBgjcUAgOg
+GAwWd3Jha2V2aW5qb2VAd2NhLmdvdi50dzANBgkqhkiG9w0BAQUFAANBALi3yK2/
+Fvvmim9Dm8O1AOdr3kYxzb86KmuMDAfYKgWGaZXn1ibn6wYt2WcWjJ4iUKzVUF+X
+7qvMVld/+3dExT4=
+</X509Certificate></X509Data></KeyInfo></Signature><Object Id="Sign_info_Flow_14_Jack_呈核"><異動資訊><簽核人員><單位>秘書室</單位><職稱>專員</職稱><姓名>Jack</姓名><帳號>Jack</帳號></簽核人員><異動別>呈核</異動別><簽核意見>承辦意見</簽核意見><簽章時間>10006220923</簽章時間></異動資訊><簽核資訊><來文文件夾 Id="DOC_0001" 產生時間="10006220923"><來文清單 來文數="1"><來文 格式="電子" 序號="0" 產生時間="10006220923"><來文字號><文字>099100000</文字></來文字號><來文類型>函</來文類型><電子來文 原始檔序號="0" /></來文></來文清單></來文文件夾><簽核文件夾 Id="DOC_Flow_14_Jack_呈核" 產生時間="10006220923"><簽核文稿清單 文稿數="1"><文稿 原始檔序號="1" 序號="0" 產生時間="10006220923"><名稱>100JP00016V1.di</名稱><文稿類型>簽</文稿類型><附件清單 附件數="1"><附件 格式="電子文件" 產生時間="10006220923"><名稱>公司OPV1.txt</名稱><附件類型>txt</附件類型><電子檔格式附件 原始檔序號="2" /></附件></附件清單></文稿></簽核文稿清單><檔案清單 檔案數="3"><電子檔案資訊 原始檔序號="0" 序號="0" 產生時間="10006220923"><檔案名稱>200707020001.di</檔案名稱><檔案大小>1291</檔案大小><檔案格式>DI</檔案格式></電子檔案資訊><電子檔案資訊 原始檔序號="1" 序號="1" 產生時間="10006220923"><檔案名稱>100JP00016V1.di</檔案名稱><檔案大小>3792</檔案大小><檔案格式>DI</檔案格式></電子檔案資訊><電子檔案資訊 原始檔序號="2" 序號="2" 產生時間="10006220923"><檔案名稱>公司OPV1.txt</檔案名稱><檔案大小>107</檔案大小><檔案格式>TXT</檔案格式></電子檔案資訊></檔案清單></簽核文件夾></簽核資訊></Object></簽核點定義></線上簽核資訊></線上簽核>

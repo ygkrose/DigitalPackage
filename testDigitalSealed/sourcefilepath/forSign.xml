@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE 線上簽核 SYSTEM "99_sign_utf8.dtd">
+<線上簽核 Id="sign_100JP00016">
+  <線上簽核流程 Id="FlowInfo">
+    <簽核流程 Id="Flow_14_Jack_呈核" 異動別="呈核" />
+  </線上簽核流程>
+  <線上簽核資訊 Id="SignInfo">
+    <簽核點定義 URI="#Flow_14_Jack_呈核" Id="sign_Flow_14_Jack_呈核">
+      <Signature Id="ds_Flow_14_Jack_呈核">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="200707020001.di">
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>
+            </DigestValue>
+          </Reference>
+          <Reference URI="來文附件1.txt">
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>
+            </DigestValue>
+          </Reference>
+          <Reference URI="來文附件2.docx">
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>
+            </DigestValue>
+          </Reference>
+          <Reference URI="100JP00016V1.di">
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>
+            </DigestValue>
+          </Reference>
+          <Reference URI="公司OP.txt">
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>
+            </DigestValue>
+          </Reference>
+          <Reference URI="#Sign_info_Flow_14_Jack_呈核">
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>
+            </DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>
+        </SignatureValue>
+        <KeyInfo>
+          <X509Data>
+          </X509Data>
+        </KeyInfo>
+      </Signature>
+      <Object Id="Sign_info_Flow_14_Jack_呈核">
+        <異動資訊>
+          <簽核人員>
+            <單位>秘書室</單位>
+            <職稱>專員</職稱>
+            <姓名>Jack</姓名>
+            <帳號>Jack</帳號>
+          </簽核人員>
+          <異動別>呈核</異動別>
+          <簽核意見>
+          </簽核意見>
+          <簽章時間>00002251346</簽章時間>
+          <次位簽核人員>
+            <簽核人員>
+              <單位>秘書室</單位>
+              <職稱>科長</職稱>
+              <姓名>DSIC</姓名>
+              <帳號>DSIC</帳號>
+            </簽核人員>
+          </次位簽核人員>
+        </異動資訊>
+        <簽核資訊>
+          <來文文件夾 Id="DOC_0001" 產生時間="00002251346">
+            <來文清單 來文數="1">
+              <來文 格式="電子" 序號="0" 產生時間="00002251346">
+                <來文字號>
+                  <文字>099100000</文字>
+                </來文字號>
+                <來文類型>函</來文類型>
+                <電子來文 原始檔序號="0">
+                  <附件清單 附件數="2">
+                    <附件 格式="電子文件" 產生時間="00002251346">
+                      <名稱>來文附件1.txt</名稱>
+                      <附件類型>txt</附件類型>
+                      <電子檔格式附件 原始檔序號="1" />
+                    </附件>
+                    <附件 格式="電子文件" 產生時間="00002251346">
+                      <名稱>來文附件2.docx</名稱>
+                      <附件類型>docx</附件類型>
+                      <電子檔格式附件 原始檔序號="2" />
+                    </附件>
+                  </附件清單>
+                </電子來文>
+              </來文>
+            </來文清單>
+          </來文文件夾>
+          <簽核文件夾 Id="DOC_Flow_14_Jack_呈核" 產生時間="00002251346">
+            <簽核文稿清單 文稿數="1">
+              <文稿 原始檔序號="3" 序號="0" 產生時間="00002251346">
+                <名稱>100JP00016V1.di</名稱>
+                <文稿類型>簽</文稿類型>
+                <附件清單 附件數="1">
+                  <附件 格式="電子文件" 產生時間="00002251346">
+                    <名稱>公司OP.txt</名稱>
+                    <附件類型>txt</附件類型>
+                    <電子檔格式附件 原始檔序號="4" />
+                  </附件>
+                </附件清單>
+              </文稿>
+            </簽核文稿清單>
+            <檔案清單 檔案數="5">
+              <電子檔案資訊 原始檔序號="0" 序號="0" 產生時間="00002251346">
+                <檔案名稱>200707020001.di</檔案名稱>
+                <檔案大小>1291</檔案大小>
+                <檔案格式>DI</檔案格式>
+              </電子檔案資訊>
+              <電子檔案資訊 原始檔序號="1" 序號="1" 產生時間="00002251346">
+                <檔案名稱>來文附件1.txt</檔案名稱>
+                <檔案大小>28</檔案大小>
+                <檔案格式>TXT</檔案格式>
+              </電子檔案資訊>
+              <電子檔案資訊 原始檔序號="2" 序號="2" 產生時間="00002251346">
+                <檔案名稱>來文附件2.docx</檔案名稱>
+                <檔案大小>11601</檔案大小>
+                <檔案格式>DOCX</檔案格式>
+              </電子檔案資訊>
+              <電子檔案資訊 原始檔序號="3" 序號="3" 產生時間="00002251346">
+                <檔案名稱>100JP00016V1.di</檔案名稱>
+                <檔案大小>3792</檔案大小>
+                <檔案格式>DI</檔案格式>
+              </電子檔案資訊>
+              <電子檔案資訊 原始檔序號="4" 序號="4" 產生時間="00002251346">
+                <檔案名稱>公司OP.txt</檔案名稱>
+                <檔案大小>107</檔案大小>
+                <檔案格式>TXT</檔案格式>
+              </電子檔案資訊>
+            </檔案清單>
+          </簽核文件夾>
+        </簽核資訊>
+      </Object>
+    </簽核點定義>
+  </線上簽核資訊>
+</線上簽核>

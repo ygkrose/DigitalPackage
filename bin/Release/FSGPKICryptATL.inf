@@ -1,0 +1,12 @@
+[Add.Code] 
+FSGPKICryptATL.dll=FSGPKICryptATL.dll 
+HiCOSPKCS11_V208.dll=HiCOSPKCS11_V208.dll 
+[HiCOSPKCS11_V208.dll] 
+FileVersion=2,0,8,36100 
+file-win32-x86=thiscab 
+DestDir= 
+[FSGPKICryptATL.dll] 
+file-win32-x86=thiscab 
+clsid={3C232DA1-E9AC-4C74-A792-2A686F7315EE} 
+RegisterServer=yes 
+FileVersion=1,5,11,808 

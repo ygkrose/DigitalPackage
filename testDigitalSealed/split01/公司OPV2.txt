@@ -1,0 +1,2 @@
+http://192.168.1.8/svn/DSICOE1/Development/Source/WordOE/OP Ver/WRA/Setup/WRAOP_0980915.exe
+裝完再線上更新

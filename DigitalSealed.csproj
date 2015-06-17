@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8FEAE67-270D-425D-AB00-4CCB516968FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DigitalSealed</RootNamespace>
+    <AssemblyName>DSICDCP</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttachmentsDesc\AttachStyle.cs" />
+    <Compile Include="AttachmentsDesc\AttsList.cs" />
+    <Compile Include="AttachmentsDesc\IAttachment.cs" />
+    <Compile Include="AttachmentsDesc\PhysicalAtt.cs" />
+    <Compile Include="ConstVar.cs" />
+    <Compile Include="AttachmentsDesc\ElecAtt.cs" />
+    <Compile Include="ErrorMsgTable.cs" />
+    <Compile Include="MakeDCP.cs" />
+    <Compile Include="MobileDCP.cs" />
+    <Compile Include="OA\EMedia.cs" />
+    <Compile Include="OA\ETransfer.cs" />
+    <Compile Include="OA\FileArch.cs" />
+    <Compile Include="OA\MediaPackage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\Object\ObjectTag.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\ReceivedDoc\ReceivedDoc.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\Signature\SignatureTag.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\DocPageFile.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\FilesList.cs" />
+    <Compile Include="SignOnline\OnlineSignFlow\FlowInfo.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\Object\ModifyInfo\ModifyInfo.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\Signature\Signature.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\MergeFileList.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\SignDocFolder.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\SignDocList.cs" />
+    <Compile Include="SignOnline\SignOnline.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignInfo.cs" />
+    <Compile Include="SignOnline\OnlineSignInfo\SignPointDef\SignPointDef.cs" />
+    <Compile Include="Tools\geneTime.cs" />
+    <Compile Include="Tools\GZip.cs" />
+    <Compile Include="Tools\TiffManager.cs" />
+    <Compile Include="Tools\WebServiceController.cs" />
+    <Compile Include="Tools\xmlTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="FSGPKICRYPTATLLib">
+      <Guid>{AD1F483F-C576-4554-8DC2-2CE3FEACE6D8}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FSXMLCAPIATLLib">
+      <Guid>{A20CD13D-64FE-4256-9D23-57E7E59F532A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,44 @@
+C:\Users\jack\Documents\Visual Studio 2008\Projects\DigitalSealed\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\testDigitalSealed.exe
+C:\Users\jack\Documents\Visual Studio 2008\Projects\DigitalSealed\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\testDigitalSealed.pdb
+C:\Users\jack\Documents\Visual Studio 2008\Projects\DigitalSealed\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jack\Documents\Visual Studio 2008\Projects\DigitalSealed\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.Form1.resources
+C:\Users\jack\Documents\Visual Studio 2008\Projects\DigitalSealed\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.Properties.Resources.resources
+C:\Users\jack\Documents\Visual Studio 2008\Projects\DigitalSealed\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.csproj.GenerateResource.Cache
+C:\Users\jack\Documents\Visual Studio 2008\Projects\DigitalSealed\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.exe
+C:\Users\jack\Documents\Visual Studio 2008\Projects\DigitalSealed\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.pdb
+C:\Users\jack\Documents\Visual Studio 2008\Projects\DigitalSealed\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\DSICDCP.dll
+C:\Users\jack\Documents\Visual Studio 2008\Projects\DigitalSealed\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\DSICDCP.pdb
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\testDigitalSealed.exe
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\testDigitalSealed.pdb
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\DSICDCP.dll
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\Interop.FSXMLCAPIATLLib.dll
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\DSICDCP.pdb
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\ResolveAssemblyReference.cache
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.Form1.resources
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.Properties.Resources.resources
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\GenerateResource-ResGen.read.1.tlog
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\GenerateResource-ResGen.write.1.tlog
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.exe
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.pdb
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\Interop.FSGPKICRYPTATLLib.dll
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\testDigitalSealed.exe.config
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\testDigitalSealed.XmlSerializers.dll
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.XmlSerializers.dll
+D:\WEBOE\拆版專用\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.Form2.resources
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\testDigitalSealed.exe.config
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.exe
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.pdb
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.XmlSerializers.dll
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\testDigitalSealed.exe
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\testDigitalSealed.XmlSerializers.dll
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\testDigitalSealed.pdb
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\DSICDCP.dll
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\Interop.FSXMLCAPIATLLib.dll
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\Interop.FSGPKICRYPTATLLib.dll
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\bin\Release\DSICDCP.pdb
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\ResolveAssemblyReference.cache
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.Form2.resources
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.Properties.Resources.resources
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\ResGen.read.1.tlog
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\ResGen.write.1.tlog
+C:\WEBOE\DigitalSealed\testDigitalSealed\testDigitalSealed\obj\Release\testDigitalSealed.Form1.resources

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="http://192.168.1.12/" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="DCPWebService" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="DCP專用WEBSERVICE" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="dsic\jack" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABmwRf8feeUG9vDT43OPLpgAAAAACAAAAAAADZgAAqAAAABAAAABoEIEVW+dyFLH5ovxrSJJ7AAAAAASAAACgAAAAEAAAAD66CPH9SU/lAsUShdt/ql4YAAAA1o7JUziZ1xnfiTmFCZhwqoqXhFSdl3cNFAAAAPptZu0mE744dGF1q/ckSJTZHlb0" SelectedForPublish="True">
+    <file relUrl="bin/DCPWebService.dll" publishTime="03/22/2011 09:38:30" />
+    <file relUrl="DCPWSE.asmx" publishTime="03/15/2011 09:43:17" />
+    <file relUrl="Web.config" publishTime="03/22/2011 09:38:52" />
+    <file relUrl="bin/DCPWebService.pdb" publishTime="03/22/2011 09:38:30" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><!DOCTYPE 線上簽核 SYSTEM "99_sign_utf8.dtd"[]><線上簽核 Id="sign_1000000016"><線上簽核流程 Id="FlowInfo"><簽核流程 Id="Flow_14_Jack_呈核" 異動別="呈核" /></線上簽核流程><線上簽核資訊 Id="SignInfo"><簽核點定義 URI="#Flow_14_Jack_呈核" Id="sign_Flow_14_Jack_呈核"><Signature Id="ds_Flow_14_Jack_呈核"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="200707020001.di"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue></Reference><Reference URI="來文附件1.txt"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue></Reference><Reference URI="來文附件2.docx"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue></Reference><Reference URI="100JP00016V1.di"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue></Reference><Reference URI="公司OPV1.txt"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue></Reference><Reference URI="#Sign_info_Flow_14_Jack_呈核"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>lYU8BJMCrSY6eP50UqTe/PWZbHY=</DigestValue></Reference></SignedInfo><SignatureValue>eRdZFgv65QoPsTr1rtD8iHOzj8yjMl8H9BYNqJ/i0SDcoJWzS4d/6766piOlae3GpJ29pVh6DIQVU+tXvVdN+jJjVSemQxjzT3nEWoVN8FsFHvCwrWEXv/NqnqNB3/SottlfRKlEEqYCYAUza5HhHzYjku3zgRD/1RLhwGcDBOY=</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+</X509Certificate></X509Data></KeyInfo></Signature><Object Id="Sign_info_Flow_14_Jack_呈核"><異動資訊 借卡="Y"><簽核人員><單位>秘書室</單位><職稱>專員</職稱><姓名>Jack</姓名><帳號>Jack</帳號></簽核人員><異動別>呈核</異動別><簽核意見>承辦意見</簽核意見><簽章時間>10004281519</簽章時間><次位簽核人員><簽核人員><單位>秘書室</單位><職稱>科長</職稱><姓名>DSIC</姓名><帳號>DSIC</帳號></簽核人員></次位簽核人員><借卡><借卡日期>10003071151</借卡日期><借卡原因>申請卡片中</借卡原因></借卡></異動資訊><簽核資訊><來文文件夾 Id="DOC_0001" 產生時間="10004281519"><來文清單 來文數="1"><來文 格式="電子" 序號="0" 產生時間="10004281519"><來文字號><文字>099100000</文字></來文字號><來文類型>函</來文類型><電子來文 原始檔序號="0"><附件清單 附件數="2"><附件 格式="電子文件" 產生時間="10004281519"><名稱>來文附件1.txt</名稱><附件類型>txt</附件類型><電子檔格式附件 原始檔序號="1" /></附件><附件 格式="電子文件" 產生時間="10004281519"><名稱>來文附件2.docx</名稱><附件類型>docx</附件類型><電子檔格式附件 原始檔序號="2" /></附件></附件清單></電子來文></來文></來文清單></來文文件夾><簽核文件夾 Id="DOC_Flow_14_Jack_呈核" 產生時間="10004281519"><簽核文稿清單 文稿數="1"><文稿 原始檔序號="3" 序號="0" 產生時間="10004281519"><名稱>100JP00016V1.di</名稱><文稿類型>簽</文稿類型><附件清單 附件數="1"><附件 格式="電子文件" 產生時間="10004281519"><名稱>公司OPV1.txt</名稱><附件類型>txt</附件類型><電子檔格式附件 原始檔序號="4" /></附件></附件清單></文稿></簽核文稿清單><檔案清單 檔案數="5"><電子檔案資訊 原始檔序號="0" 序號="0" 產生時間="10004281519"><檔案名稱>200707020001.di</檔案名稱><檔案大小>1291</檔案大小><檔案格式>DI</檔案格式></電子檔案資訊><電子檔案資訊 原始檔序號="1" 序號="1" 產生時間="10004281519"><檔案名稱>來文附件1.txt</檔案名稱><檔案大小>28</檔案大小><檔案格式>TXT</檔案格式></電子檔案資訊><電子檔案資訊 原始檔序號="2" 序號="2" 產生時間="10004281519"><檔案名稱>來文附件2.docx</檔案名稱><檔案大小>11601</檔案大小><檔案格式>DOCX</檔案格式></電子檔案資訊><電子檔案資訊 原始檔序號="3" 序號="3" 產生時間="10004281519"><檔案名稱>100JP00016V1.di</檔案名稱><檔案大小>3792</檔案大小><檔案格式>DI</檔案格式></電子檔案資訊><電子檔案資訊 原始檔序號="4" 序號="4" 產生時間="10004281519"><檔案名稱>公司OPV1.txt</檔案名稱><檔案大小>107</檔案大小><檔案格式>TXT</檔案格式></電子檔案資訊></檔案清單></簽核文件夾></簽核資訊></Object></簽核點定義></線上簽核資訊></線上簽核>

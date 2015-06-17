@@ -1,0 +1,1913 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE 線上簽核 SYSTEM "99_sign_utf8.dtd"[]>
+<線上簽核 Id="sign_09655588882">
+	<線上簽核流程 Id="FlowInfo">
+		<簽核流程 Id="Flow_14_Jack_呈核" 異動別="呈核" />
+		<簽核流程 Id="Flow_14_Jack_解併" 異動別="解併" />
+		<簽核流程 Id="Flow_14_Jack_解併" 異動別="解併" />
+		<簽核流程 Id="Flow_14_Jack_解併" 異動別="解併" />
+		<簽核流程 Id="Flow_14_Jack_解併" 異動別="解併" />
+		<簽核流程 Id="Flow_14_Jack_解併" 異動別="解併" />
+		<簽核流程 Id="Flow_14_Jack_解併" 異動別="解併" />
+		<簽核流程 Id="Flow_14_Jack_解併" 異動別="解併" />
+		<簽核流程 Id="Flow_14_Jack_解併" 異動別="解併" />
+		<簽核流程 Id="Flow_14_Jack_解併" 異動別="解併" />
+		<簽核流程 Id="Flow_14_Jack_解併" 異動別="解併" />
+		<簽核流程 Id="Flow_14_Jack_解併" 異動別="解併" />
+	</線上簽核流程>
+	<線上簽核資訊 Id="SignInfo">
+		<簽核點定義 URI="#Flow_14_Jack_呈核" Id="sign_Flow_14_Jack_呈核">
+			<Signature Id="ds_Flow_14_Jack_呈核">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_呈核">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>L0xjoAq3jqJqHHFtcCmh8vgU5t0=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>uMS6qixQSDAjmCXlz2dimiOkqgmHJdVwkuKw3BpbpDRYoHyzISho7OCz03iVAgL/5DycVNeZT0QdaydGLQdRH8hgHeAnUr0KJRZuEy1z27rGY/PLogVCf3upQNbMzuzSfRgvVCF7MwJZ9dLUPOQ+JMrj6CTQRe0oLFKJKumxu0o=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_呈核">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>呈核</異動別>
+					<簽核意見>承辦意見</簽核意見>
+					<簽章時間>00003091531</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003091531">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003091531">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003091531">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="1" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003091531">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="2" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_呈核" 產生時間="00003091531">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="3" 序號="0" 產生時間="00003091531">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003091531">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="4" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="0" 序號="0" 產生時間="00003091531">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="1" 序號="1" 產生時間="00003091531">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="2" 序號="2" 產生時間="00003091531">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="3" 序號="3" 產生時間="00003091531">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="4" 序號="4" 產生時間="00003091531">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588885</子文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+		<簽核點定義 URI="#Flow_14_Jack_解併" Id="sign_Flow_14_Jack_解併">
+			<Signature Id="ds_Flow_14_Jack_解併">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#sign_Flow_14_Jack_呈核">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>JzFOIOcJ07MevP5fHRmhvW3kTCw=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_解併">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>p2XM5gn78QV6+TtFLABjDUA1xPM=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>DR6XQlmKcufm3FSDJ+aik+dm9lAKoHoc9B8YKJc9Zxy4d3oxMGvyMFiH428W8HSLIyZ+rChJo+IvafqOzZYsz46koLffXjrhhZ39IOqf8koOz9vbdk0W03o64klE/J0cVOCjUZVgAJpXX26ViNNwKOhHYqWWcLARWhKltaumNa0=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_解併">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>解併</異動別>
+					<簽核意見>解併1份子文(0970000024)</簽核意見>
+					<簽章時間>00003101001</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003101001">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003101001">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003101001">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="6" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003101001">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="7" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_解併" 產生時間="00003101001">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="8" 序號="0" 產生時間="00003101001">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003101001">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="9" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="5" 序號="0" 產生時間="00003101001">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="6" 序號="1" 產生時間="00003101001">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="7" 序號="2" 產生時間="00003101001">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="8" 序號="3" 產生時間="00003101001">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="9" 序號="4" 產生時間="00003101001">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+		<簽核點定義 URI="#Flow_14_Jack_解併" Id="sign_Flow_14_Jack_解併">
+			<Signature Id="ds_Flow_14_Jack_解併1">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#sign_Flow_14_Jack_解併">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>l6oRfb5ByUrgtEGjqL9Ai/PEVi0=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_解併1">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>noqTbBy2rtXN5fWswwgjzYUiGQc=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>nVHO5Pt1IL/H+G8pNrHMX1XN0MNeQ7ilXfOrk5fd1Dpd1ZJy5tftbQm+F6Gv6yoyf/YiNCGICEMs2I/4K25i3drWct6Yr4mclxA7+OAx3qTqg4sRCpcpDDLLn0yGAgulxeZNsuI6WFhuprE/7O/xiSu6rPqGRgXmKglI4og9Gkw=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_解併1">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>解併</異動別>
+					<簽核意見>解併1份子文(0970000024)</簽核意見>
+					<簽章時間>00003101008</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003101008">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003101008">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003101008">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="11" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003101008">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="12" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_解併1" 產生時間="00003101008">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="13" 序號="0" 產生時間="00003101008">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003101008">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="14" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="10" 序號="0" 產生時間="00003101008">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="11" 序號="1" 產生時間="00003101008">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="12" 序號="2" 產生時間="00003101008">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="13" 序號="3" 產生時間="00003101008">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="14" 序號="4" 產生時間="00003101008">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+		<簽核點定義 URI="#Flow_14_Jack_解併" Id="sign_Flow_14_Jack_解併">
+			<Signature Id="ds_Flow_14_Jack_解併2">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#sign_Flow_14_Jack_解併">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>OXpQo9UWuLAVrkN6e9Yzx2SVlcY=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_解併2">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>UJG501ZB21ttJPc41QRf/bp9jJ0=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>YZZ/cxWA/afSYiS0rx/81tS+yfbb1JjEOBDre6IrHRSHIXZezNFBO7T2Yi38loTZX1AwLe4eo55LMKRCmBVgaiDJkR/2+vmjYHKDwl/wUYbHzbcB1g+umMpGPzMTzBAvsJMdjO9GFm37BzR3adkfudXhZpwhjPHHuDp+h5hZZHI=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_解併2">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>解併</異動別>
+					<簽核意見>解併1份子文(0970000024)</簽核意見>
+					<簽章時間>00003101009</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003101009">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003101009">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003101009">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="16" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003101009">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="17" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_解併2" 產生時間="00003101009">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="18" 序號="0" 產生時間="00003101009">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003101009">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="19" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="15" 序號="0" 產生時間="00003101009">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="16" 序號="1" 產生時間="00003101009">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="17" 序號="2" 產生時間="00003101009">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="18" 序號="3" 產生時間="00003101009">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="19" 序號="4" 產生時間="00003101009">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+		<簽核點定義 URI="#Flow_14_Jack_解併" Id="sign_Flow_14_Jack_解併">
+			<Signature Id="ds_Flow_14_Jack_解併3">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#sign_Flow_14_Jack_解併">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>xLFRRepgw1CKRuXUhSv56HObwFc=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_解併3">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>/4IQQzv1RJSvhF+I6g7ufj786hY=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>qCBvyrMwDrWjbDIMKXWDlVi/ljAUMmnR8qPDyAMPpNs6ghk6IkPaHsYv3J/saOkVmCRzOFniS0nyAGNG3Om0tKdiYH+iQjn1YOz16LU9lkCbjcIcZ1Zc8s+MQvPCKIc4UgvXbaAtAKsKkvFLmJJcHLwF29tOLH+ucSqzDWdJ8Zo=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_解併3">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>解併</異動別>
+					<簽核意見>解併1份子文(0970000024)</簽核意見>
+					<簽章時間>00003101011</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003101011">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003101011">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003101011">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="21" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003101011">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="22" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_解併3" 產生時間="00003101011">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="23" 序號="0" 產生時間="00003101011">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003101011">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="24" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="20" 序號="0" 產生時間="00003101011">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="21" 序號="1" 產生時間="00003101011">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="22" 序號="2" 產生時間="00003101011">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="23" 序號="3" 產生時間="00003101011">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="24" 序號="4" 產生時間="00003101011">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+		<簽核點定義 URI="#Flow_14_Jack_解併" Id="sign_Flow_14_Jack_解併">
+			<Signature Id="ds_Flow_14_Jack_解併4">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#sign_Flow_14_Jack_解併">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>GBJ0A/ojUl0XBgKb+kQUjQaKq3Y=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_解併4">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>X9UPAZzIvpxN43bEJxasyWdmI7U=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>QmHYe7ANtY0tB2UWx8zMUIFim8imFpw3i3SaZ7a2adhf/G0znS6yP/6GurbEtsD74iMxIaka33Zn0EE0idf0BcnW+HiXTQtk83p4plQAz3aRz/busfryjqOQbLzqcXOTX/eDK+Wdq9dnxPpOxehqT2WyffVi/s9XPIMCou0EedE=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_解併4">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>解併</異動別>
+					<簽核意見>解併1份子文(0970000024)</簽核意見>
+					<簽章時間>00003101011</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003101011">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003101011">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003101011">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="26" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003101011">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="27" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_解併4" 產生時間="00003101011">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="28" 序號="0" 產生時間="00003101011">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003101011">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="29" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="25" 序號="0" 產生時間="00003101011">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="26" 序號="1" 產生時間="00003101011">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="27" 序號="2" 產生時間="00003101011">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="28" 序號="3" 產生時間="00003101011">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="29" 序號="4" 產生時間="00003101011">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+		<簽核點定義 URI="#Flow_14_Jack_解併" Id="sign_Flow_14_Jack_解併">
+			<Signature Id="ds_Flow_14_Jack_解併5">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#sign_Flow_14_Jack_解併">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WquIg1wkyv0krssGppiDGzAddHM=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_解併5">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>otZqesZgENEpFbLbKkSOCH5rUCs=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>LFu2qui0bhbRR7raD3xXMxMYYd8+IY+nYW2kOaVDiwHgV4cVQOPHULkorQ7UyW07lfcgjVZgsbJjzaXlloZYSw0Qc6IXccucBJuWVocChMYlPvqj/lH7cSbiltlg57go0T9tdNecB+aoybBvYkak7hkvo960yPkA3Q51VIGpIEQ=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_解併5">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>解併</異動別>
+					<簽核意見>解併1份子文(0970000024)</簽核意見>
+					<簽章時間>00003101014</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003101014">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003101014">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003101014">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="31" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003101014">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="32" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_解併5" 產生時間="00003101014">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="33" 序號="0" 產生時間="00003101014">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003101014">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="34" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="30" 序號="0" 產生時間="00003101014">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="31" 序號="1" 產生時間="00003101014">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="32" 序號="2" 產生時間="00003101014">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="33" 序號="3" 產生時間="00003101014">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="34" 序號="4" 產生時間="00003101014">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+		<簽核點定義 URI="#Flow_14_Jack_解併" Id="sign_Flow_14_Jack_解併">
+			<Signature Id="ds_Flow_14_Jack_解併6">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#sign_Flow_14_Jack_解併">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>XutoPHrjroti3VNS86ysx+2uW+c=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_解併6">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TS89PMJCOh4cGlqan8gOvCKgRrI=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>Nt01/KQeiMtHHYHnGaMzPJSiIZXfWJSkvgdx9X2DDN26x0J31qlE4aBp/ntyg2utcV49gMC039Dbus48IEoGngUGTaC2pMJuobrgyxwadSy1o08ebUdZ8gqrDcIoeHELYCSHQOaBtqPpmGx1HwpHHFCPxWu0LIk/beGdU6BJ6Ys=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_解併6">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>解併</異動別>
+					<簽核意見>解併1份子文(0970000024)</簽核意見>
+					<簽章時間>00003101018</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003101018">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003101018">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003101018">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="36" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003101018">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="37" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_解併6" 產生時間="00003101018">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="38" 序號="0" 產生時間="00003101018">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003101018">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="39" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="35" 序號="0" 產生時間="00003101018">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="36" 序號="1" 產生時間="00003101018">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="37" 序號="2" 產生時間="00003101018">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="38" 序號="3" 產生時間="00003101018">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="39" 序號="4" 產生時間="00003101018">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+		<簽核點定義 URI="#Flow_14_Jack_解併" Id="sign_Flow_14_Jack_解併">
+			<Signature Id="ds_Flow_14_Jack_解併7">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#sign_Flow_14_Jack_解併">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>PAYZtrjwL1EMNXS7J/jUdmRRfXY=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_解併7">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>KhVDnXzG8wFwlU294rc1YQO0Cv4=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>FKlq4YylorS8+A/UblMnE0b8MPZE2m6e6yqn95goAqvm2eO5J1VAUXkUurhFStIy+N9nDU/MFUYwe9WeKGRgt/8uiklLj3akagv6Usj3GXseJ6AIC5mTTdhqRZE0eVAQJtni9qCt5GvXfuqsPSAgdJURWIb9LmaI+fAhKLfjzI4=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_解併7">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>解併</異動別>
+					<簽核意見>解併1份子文(0970000024)</簽核意見>
+					<簽章時間>00003101020</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003101020">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003101020">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003101020">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="41" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003101020">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="42" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_解併7" 產生時間="00003101020">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="43" 序號="0" 產生時間="00003101020">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003101020">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="44" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="40" 序號="0" 產生時間="00003101020">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="41" 序號="1" 產生時間="00003101020">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="42" 序號="2" 產生時間="00003101020">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="43" 序號="3" 產生時間="00003101020">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="44" 序號="4" 產生時間="00003101020">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+		<簽核點定義 URI="#Flow_14_Jack_解併" Id="sign_Flow_14_Jack_解併">
+			<Signature Id="ds_Flow_14_Jack_解併8">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#sign_Flow_14_Jack_解併">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>MB/kONoqG/b7LRg7FJs6CFTogSc=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_解併8">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>wt8gqHeWfovV+pIZr6uDBIu7uQ4=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>jJmguQVfdr4tkM/CyAQZiCPz2z7pXHhot/aY0Dd1VhCAhPDyWILUjVkeTERg38AwKgJZ6eRrKY3dGXhcqKcBRVZGluASmnvVPa3umQfliAmItO6jeNnNwD1m+zq3Y6KX6d6phb0E4dXlTDIZ/dxjwQFBd74IP8AlxanhJFBP7Bo=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_解併8">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>解併</異動別>
+					<簽核意見>解併1份子文(0970000024)</簽核意見>
+					<簽章時間>00003101021</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003101021">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003101021">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003101021">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="46" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003101021">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="47" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_解併8" 產生時間="00003101021">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="48" 序號="0" 產生時間="00003101021">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003101021">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="49" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="45" 序號="0" 產生時間="00003101021">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="46" 序號="1" 產生時間="00003101021">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="47" 序號="2" 產生時間="00003101021">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="48" 序號="3" 產生時間="00003101021">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="49" 序號="4" 產生時間="00003101021">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+		<簽核點定義 URI="#Flow_14_Jack_解併" Id="sign_Flow_14_Jack_解併">
+			<Signature Id="ds_Flow_14_Jack_解併9">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#sign_Flow_14_Jack_解併">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>7PSAkV4vn+sWxMi/bwBnC+693CI=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_解併9">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>jWzlvzwjozP9wOfIr4ncOPp5jVw=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>MooEAF/rPteBJNO56blH4Pkn3fMpvsFVd2u3RG9zd0p2QHdxH3mlBciHbRRl5Ybge5MgUg38NPGtXj7SBBYjqr/GctQBPis5YSvkG+6P2Cow3jdIJPIb2aDjvArA/NMXDCO8Xdakp+XbblBDGxCXgAPEanIc0J3izuTuq6bIEQs=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_解併9">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>解併</異動別>
+					<簽核意見>解併1份子文(0970000024)</簽核意見>
+					<簽章時間>00003101024</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003101024">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003101024">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003101024">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="51" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003101024">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="52" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_解併9" 產生時間="00003101024">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="53" 序號="0" 產生時間="00003101024">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003101024">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="54" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="50" 序號="0" 產生時間="00003101024">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="51" 序號="1" 產生時間="00003101024">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="52" 序號="2" 產生時間="00003101024">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="53" 序號="3" 產生時間="00003101024">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="54" 序號="4" 產生時間="00003101024">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+		<簽核點定義 URI="#Flow_14_Jack_解併" Id="sign_Flow_14_Jack_解併">
+			<Signature Id="ds_Flow_14_Jack_解併10">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<Reference URI="200707020001.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>9z3EpFEaCy1apa2WBqpCvZ1Ab/M=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>TFxEbBuJUU+iODJo2AEiIpoQ2SI=</DigestValue>
+					</Reference>
+					<Reference URI="來文附件2.docx">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>BIen7vN7EO7oPI4KMYzn0lRkjvE=</DigestValue>
+					</Reference>
+					<Reference URI="100JP00016V1.di">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>AUPY3nD6m/WSHhNpbd5+ot8dbLQ=</DigestValue>
+					</Reference>
+					<Reference URI="公司OPV1.txt">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>WJ1syfvtgJWN0ApazwoLpCS+xeM=</DigestValue>
+					</Reference>
+					<Reference URI="#sign_Flow_14_Jack_解併">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>mh4wzJms+oatMDPEANsrx4DeTBM=</DigestValue>
+					</Reference>
+					<Reference URI="#Sign_info_Flow_14_Jack_解併10">
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<DigestValue>ZLUHADjmFMBaKBKxzWNldjvh1cA=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>f7OJhtnlF3dKiqHMhWCCBFY3UUzoNRUDd6KnZSdl8xQHhw+Hghjnt4owx7QZnNVvS2Svz6EuUoY1kxxFJzqoHsaYVwqYy4XkgXPbmKJkD+O7XqYSY0NFm/3hW1NWQbyQ+5Q/ijgumxjCBf4ULjQSgCnZfhDpF1qUTsL5jwdO3pw=</SignatureValue>
+				<KeyInfo>
+					<X509Data>
+						<X509Certificate>MIIENTCCAx2gAwIBAgIQIXPLrF9F6OdGhxxDgw1a8TANBgkqhkiG9w0BAQUFADBH
+MQswCQYDVQQGEwJUVzESMBAGA1UECgwJ6KGM5pS/6ZmiMSQwIgYDVQQLDBvlhafm
+lL/pg6jmhpHorYnnrqHnkIbkuK3lv4MwHhcNMDcwNTEwMDA1MDUwWhcNMTIwNTEw
+MDA1MDUwWjA8MQswCQYDVQQGEwJUVzESMBAGA1UEAwwJ5qWK5a2j5YmbMRkwFwYD
+VQQFExAwMDAwMDAwMTEyNzIxOTI0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDCZIaM3+wF8MAGhaiJ8Tyot0SpbO7ErWuUZxfWs730hDtla9QTZraCTxX64iXh
+12ZUyChFyb0OftJ/qvsjnPz8YVSK8j+kgeQn7NFc31eaUbXVm2fIo7EdPgmzKcdk
+FQEp7vNq77REYsz0GVNk723z9Z9VzbJBgxIa776QWFj1PwIDAQABo4IBqjCCAaYw
+HwYDVR0jBBgwFoAUtiDIz75RiqRUuXjTBNEKssx+L0YwHQYDVR0OBBYEFJZEbZbT
+B2sgDVV8OdPX25DvsV7JMEoGA1UdHwRDMEEwP6A9oDuGOWh0dHA6Ly9tb2ljYS5u
+YXQuZ292LnR3L3JlcG9zaXRvcnkvTU9JQ0EvQ1JML2NvbXBsZXRlLmNybDCBmwYI
+KwYBBQUHAQEEgY4wgYswRwYIKwYBBQUHMAKGO2h0dHA6Ly9tb2ljYS5uYXQuZ292
+LnR3L3JlcG9zaXRvcnkvQ2VydHMvSXNzdWVkVG9UaGlzQ0EucDdiMEAGCCsGAQUF
+BzABhjRodHRwOi8vbW9pY2EubmF0Lmdvdi50dy9jZ2ktYmluL09DU1Avb2NzcF9z
+ZXJ2ZXIuZXhlMA4GA1UdDwEB/wQEAwIHgDAUBgNVHSAEDTALMAkGB2CGdmUAAwMw
+HwYDVR0RBBgwFoEUbWUuY29tQG1zYS5oaW5ldC5uZXQwMwYDVR0JBCwwKjAVBgdg
+hnYBZAIBMQoGCGCGdgFkAwEBMBEGB2CGdgFkAjMxBgwENDU1NzANBgkqhkiG9w0B
+AQUFAAOCAQEAHsYpitEXurl5hoVPJCpzLcGUic2/HSKAFEmQCEJI4k8s3+kBvXbw
+bU8RRxsv+i9lv5sB1ulb/rwewk6yUvmz/6MFDXlw4jBUs8VEbcTsx5Gw7nUqoczc
+opiFq/f0x7MFCGdgl7mh3GNbpaG/P0abXAsMdJTz8VYGBLjaqfMJtwITqf/qsy1F
+/KAjPs6+0lAvMnuSZZo8yzQJn0i0BuZfFhqcjzjm3EVnSVRMLqtPrcQTA5bEfIuJ
+Q3mYX5bGgRuOFXF1OaxHqpywSSjHz8n+x9ANtX8Oz2aM/na7ZdVq3XYgsfGd5sEe
+zaI3uc54foTs2O62C0C0O1Fe0L0acCbe5w==
+						</X509Certificate>
+					</X509Data>
+				</KeyInfo>
+			</Signature>
+			<Object Id="Sign_info_Flow_14_Jack_解併10">
+				<異動資訊>
+					<簽核人員>
+						<單位>秘書室</單位>
+						<職稱>專員</職稱>
+						<姓名>Jack</姓名>
+						<帳號>Jack</帳號>
+					</簽核人員>
+					<異動別>解併</異動別>
+					<簽核意見>解併1份子文(0970000024)</簽核意見>
+					<簽章時間>00003101029</簽章時間>
+					<次位簽核人員>
+						<簽核人員>
+							<單位>秘書室</單位>
+							<職稱>科長</職稱>
+							<姓名>DSIC</姓名>
+							<帳號>DSIC</帳號>
+						</簽核人員>
+					</次位簽核人員>
+				</異動資訊>
+				<簽核資訊>
+					<來文文件夾 Id="DOC_0001" 產生時間="00003101029">
+						<來文清單 來文數="1">
+							<來文 格式="電子" 序號="0" 產生時間="00003101029">
+								<來文字號>
+									<文字>099100000</文字>
+								</來文字號>
+								<來文類型>函</來文類型>
+								<電子來文 原始檔序號="0">
+									<附件清單 附件數="2">
+										<附件 格式="電子文件" 產生時間="00003101029">
+											<名稱>來文附件1.txt</名稱>
+											<附件類型>txt</附件類型>
+											<電子檔格式附件 原始檔序號="56" />
+										</附件>
+										<附件 格式="電子文件" 產生時間="00003101029">
+											<名稱>來文附件2.docx</名稱>
+											<附件類型>docx</附件類型>
+											<電子檔格式附件 原始檔序號="57" />
+										</附件>
+									</附件清單>
+								</電子來文>
+							</來文>
+						</來文清單>
+					</來文文件夾>
+					<簽核文件夾 Id="DOC_Flow_14_Jack_解併10" 產生時間="00003101029">
+						<簽核文稿清單 文稿數="1">
+							<文稿 原始檔序號="58" 序號="0" 產生時間="00003101029">
+								<名稱>100JP00016V1.di</名稱>
+								<文稿類型>簽</文稿類型>
+								<附件清單 附件數="1">
+									<附件 格式="電子文件" 產生時間="00003101029">
+										<名稱>公司OPV1.txt</名稱>
+										<附件類型>txt</附件類型>
+										<電子檔格式附件 原始檔序號="59" />
+									</附件>
+								</附件清單>
+							</文稿>
+						</簽核文稿清單>
+						<檔案清單 檔案數="5">
+							<電子檔案資訊 原始檔序號="55" 序號="0" 產生時間="00003101029">
+								<檔案名稱>200707020001.di</檔案名稱>
+								<檔案大小>1291</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="56" 序號="1" 產生時間="00003101029">
+								<檔案名稱>來文附件1.txt</檔案名稱>
+								<檔案大小>28</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="57" 序號="2" 產生時間="00003101029">
+								<檔案名稱>來文附件2.docx</檔案名稱>
+								<檔案大小>11601</檔案大小>
+								<檔案格式>DOCX</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="58" 序號="3" 產生時間="00003101029">
+								<檔案名稱>100JP00016V1.di</檔案名稱>
+								<檔案大小>3792</檔案大小>
+								<檔案格式>DI</檔案格式>
+							</電子檔案資訊>
+							<電子檔案資訊 原始檔序號="59" 序號="4" 產生時間="00003101029">
+								<檔案名稱>公司OPV1.txt</檔案名稱>
+								<檔案大小>107</檔案大小>
+								<檔案格式>TXT</檔案格式>
+							</電子檔案資訊>
+						</檔案清單>
+						<併文清單>
+							<母文>09655588882</母文>
+							<子文>09655588883</子文>
+						</併文清單>
+					</簽核文件夾>
+				</簽核資訊>
+			</Object>
+		</簽核點定義>
+	</線上簽核資訊>
+</線上簽核>

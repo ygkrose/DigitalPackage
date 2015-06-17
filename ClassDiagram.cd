@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DigitalSealed.FlowInfo" Collapsed="true">
+    <Position X="4" Y="1.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="DigitalSealed.FlowInfo.FlowType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SignOnline\OnlineSignFlow\FlowInfo.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACgAAAAAgAAIAAAAAAAAAAAAAAAAAAAQAAAAAECAA=</HashCode>
+      <FileName>SignOnline\OnlineSignFlow\FlowInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.ReceivedDoc.ReceivedDoc" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Interface Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.ReceivedDoc.ReceivedDoc.來文介面" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\ReceivedDoc\ReceivedDoc.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.ReceivedDoc.ReceivedDoc.電子來文" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\ReceivedDoc\ReceivedDoc.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.ReceivedDoc.ReceivedDoc.紙本來文" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\ReceivedDoc\ReceivedDoc.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAABCAAAAAAARAAAAAAIAgCAgAJAAAAAgAAEAAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\ReceivedDoc\ReceivedDoc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.SignInfo" Collapsed="true">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAgAAAAAIAAAAAAAAAAAACAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.SignOnline" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>JACkDUmk6MIGQIIUQAICEEBJkyAE4AADCAYAAAwIhAA=</HashCode>
+      <FileName>SignOnline\SignOnline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.MakeDCP" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAGAAAAAAYE0EwACAARAAAgAAAAAIAAAAAAAAAQ=</HashCode>
+      <FileName>MakeDCP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.OA.EMedia" Collapsed="true">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AmAAAAAAAAAABACAIAAAIAIAABAAAAIBAAAoACEAmAA=</HashCode>
+      <FileName>OA\EMedia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.OA.ETransfer" Collapsed="true">
+    <Position X="4" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAIAQAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>OA\ETransfer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.OA.Archivist" Collapsed="true">
+    <Position X="3.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQBAkgAAAIAQAAAAABAAAAAAAAEAAAABMAQAAAA=</HashCode>
+      <FileName>OA\FileArch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.OA.MediaPackage" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAEAAAAAAAIEAAEQAAQAJAAIAAEAAAAAAAAAA=</HashCode>
+      <FileName>OA\MediaPackage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.Tools.geneTime" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Tools\geneTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.Tools.GZip" Collapsed="true">
+    <Position X="13.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABIAAAAABAAAAAAAACAAQAAAAAAAAAAAAAECACAAAA=</HashCode>
+      <FileName>Tools\GZip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.Tools.GZippedFile" Collapsed="true">
+    <Position X="13.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAABAAiBAAAAAAAUAAAgABAA=</HashCode>
+      <FileName>Tools\GZip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.Tools.GZipResult" Collapsed="true">
+    <Position X="13.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAgAAAAAAAgAAABAAAAQAAQAAAAAIAAAIA=</HashCode>
+      <FileName>Tools\GZip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.Tools.TiffManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgggAACAAAAgAAAiAwAACEAAAAAABAAAIAAAFAAA=</HashCode>
+      <FileName>Tools\TiffManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DigitalSealed.Tools.xmlTool" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Tools\xmlTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.SignPointDef" Collapsed="true">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABCAAAAgAAAAAAACAAAEAAAAIAAAAUgAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\SignPointDef.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Signature.Signature" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CADihAABIAEIAIIQAQgAAAAIQAiAAAEAUABAAkIAEQA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Signature\Signature.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Signature.SignatureTag" Collapsed="true">
+    <Position X="7.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAGAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAEAAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Signature\SignatureTag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.ModifyInfo.ModifyInfo" Collapsed="true">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAEBAgAAEAAAAAAAAAAAAAAAAAAAAAAAAAEACAg=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Object\ModifyInfo\ModifyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.SignDocFolder.DocPageFile" Collapsed="true">
+    <Position X="9.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAIAAAAAAAAAAAAAAAAABAAAIgAAAAgAEAAAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\DocPageFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.SignDocFolder.DocPageList" Collapsed="true">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.SignDocFolder.DocPageList.Page" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\DocPageFile.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAgAAAAAAAAEAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\DocPageFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.SignDocFolder.FilesList" Collapsed="true">
+    <Position X="9.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\FilesList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.SignDocFolder.ElecFileInfo" Collapsed="true">
+    <Position X="7.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAQAQAQAAAAAAgAQAgACIAAAAAgAABAAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\FilesList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.SignDocFolder.MergeFileList" Collapsed="true">
+    <Position X="7.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAgAIAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\MergeFileList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.SignDocFolder.SignDocFolder" Collapsed="true">
+    <Position X="5.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgCAEAEAAQCAAAAAABAAAEAAAAAAAIAAEAAgAABCAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\SignDocFolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.SignDocFolder.SignDocList" Collapsed="true">
+    <Position X="6" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\SignDocList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalSealed.SignOnline.OnlineSignInfo.SignPointDef.Object.SignInfo.SignDocFolder.Document" Collapsed="true">
+    <Position X="7.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAwAAAAAQECAgAAAAAAAAFIkAAAAgAAAAAA=</HashCode>
+      <FileName>SignOnline\OnlineSignInfo\SignPointDef\Object\SignInfo\SignDocFolder\SignDocList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="新細明體" Size="9.75" />
+</ClassDiagram>

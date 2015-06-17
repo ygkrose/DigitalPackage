@@ -1,0 +1,863 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.Services;
+using System.Xml;
+using System.Data.SqlClient;
+using System.Data;
+using System.Data.SqlTypes;
+using System.IO;
+using System.Configuration;
+
+namespace DCPWebService
+{
+    /// <summary>
+    /// 數位封裝專用WS
+    /// </summary>
+    [WebService(Namespace = "http://www.dsic.com.tw/")]
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [System.ComponentModel.ToolboxItem(false)]
+    public class DCPWSE : System.Web.Services.WebService
+    {
+        private string SiFilePath = "";
+        private string _DepId = "";
+
+        /// <summary>
+        /// 取得公文相關文書及附件
+        /// </summary>
+        /// <param name="_useorgseqno">機關代碼</param>
+        /// <param name="_docno">文號</param>
+        /// <returns></returns>
+        [WebMethod]
+        public XmlNode getWordDocAttInfo(string _useorgseqno, string _docno)
+        {
+            string sqlstr = "SELECT  WordHeader.WordDocNO, WordHeader.DocTypNam, WordHeader.VerNO,WordAtaDetail.AtaFile, WordAtaDetail.LastChangeVer, WordAtaDetail.AtaTyp ";
+            sqlstr += "FROM WordHeader LEFT OUTER JOIN WordAtaDetail ON (WordHeader.WordDocNO = WordAtaDetail.WordDocNO and WordAtaDetail.AtaTyp='2') WHERE (WordHeader.ParDocNO = @DocNO) AND (WordHeader.UseOrgSeqNO = @SeqNO) FOR XML AUTO";
+            SqlParameter[] Parms = new SqlParameter[] {
+                    new SqlParameter("@SeqNO", SqlDbType.SmallInt,2),
+					new SqlParameter("@DocNO", SqlDbType.Char, _docno.Length)};
+            Parms[0].Value = _useorgseqno;
+            Parms[1].Value = _docno;
+            
+            using (XmlReader xdr = SqlHelper.ExecuteXmlReader(SqlHelper.ConnectionStringLocalTransaction, CommandType.Text, sqlstr, Parms))
+            {
+                XmlNode rtnNode = new XmlDocument().CreateElement("Result") as XmlNode;
+                if (xdr.Read())
+                {
+                    string tmp = "";
+                    while (xdr.ReadState != ReadState.EndOfFile)
+                    {
+                        tmp += xdr.ReadOuterXml();
+                    }
+                    rtnNode.InnerXml = tmp;
+                }
+                return rtnNode;
+            }
+            return null;
+
+        }
+
+        /// <summary>
+        /// 取得來文相關資訊
+        /// </summary>
+        /// <param name="_useorgseqno">機關代碼</param>
+        /// <param name="_docno">文號</param>
+        /// <returns></returns>
+        [WebMethod]
+        public XmlNode getInDocAttInfo(string _useorgseqno, string _docno)
+        {
+            string sqlstr = "SELECT FepHeader.FepSeqNO ,FepHeader.OrgDocNO ,FepHeader.DocTypNam , FepHeader.DiFile ,FepAtaDetail.AtaFile FROM FepHeader LEFT OUTER JOIN FepAtaDetail ON ";
+            sqlstr += "FepHeader.UseOrgSeqNO = FepAtaDetail.UseOrgSeqNO and FepHeader.FepSeqNO = FepAtaDetail.FepSeqNO where FepHeader.UseOrgSeqNO =@SeqNO and FepHeader.DocNO=@DocNO FOR XML AUTO";
+            SqlParameter[] Parms = new SqlParameter[] {
+                    new SqlParameter("@SeqNO", SqlDbType.SmallInt,2),
+					new SqlParameter("@DocNO", SqlDbType.Char, _docno.Length)};
+            Parms[0].Value = _useorgseqno;
+            Parms[1].Value = _docno;
+            using (XmlReader xdr = SqlHelper.ExecuteXmlReader(SqlHelper.ConnectionStringLocalTransaction, CommandType.Text, sqlstr, Parms))
+            {
+                XmlNode rtnNode = new XmlDocument().CreateElement("Result") as XmlNode;
+                if (xdr.Read())
+                {
+                    string tmp = "";
+                    while (xdr.ReadState != ReadState.EndOfFile)
+                    {
+                        tmp += xdr.ReadOuterXml();
+                    }
+                    rtnNode.InnerXml = tmp;
+                }
+                else //紙本附件
+                {
+                    sqlstr = "SELECT ScanLog.ImgPage, ScanLog.ImgDir, DocHeader.DocTypNam FROM  ScanLog left join DocHeader on ScanLog.UseOrgSeqNo = DocHeader.UseOrgSeqNo and  ScanLog.DocNO = DocHeader.DocNO WHERE ScanLog.UseOrgSeqNo=@SeqNO AND ScanLog.DocNO = @DocNO";
+                    using (SqlDataReader sdr = SqlHelper.ExecuteReader(SqlHelper.ConnectionStringLocalTransaction, CommandType.Text, sqlstr, Parms))
+                    {
+                        while (sdr.Read())
+                        {
+                            XmlNode anode = rtnNode.OwnerDocument.CreateElement("ScanLog");
+                            XmlAttribute att1 = rtnNode.OwnerDocument.CreateAttribute("PageCnt");
+                            att1.Value = sdr["ImgPage"].ToString();
+                            XmlAttribute att2 = rtnNode.OwnerDocument.CreateAttribute("ImgDir");
+                            att2.Value = sdr["ImgDir"].ToString();
+                            XmlAttribute att3 = rtnNode.OwnerDocument.CreateAttribute("DocTypNam");
+                            att3.Value = sdr["DocTypNam"].ToString(); 
+                            anode.InnerText = _docno + ".TIF";
+                            anode.Attributes.Append(att1); anode.Attributes.Append(att2); anode.Attributes.Append(att3);
+                            rtnNode.AppendChild(anode);
+                        }
+                    }
+                }
+                return rtnNode;
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// 借卡及臨時憑證需異動的資料
+        /// </summary>
+        /// <param name="UserTempCaDetail"></param>
+        /// <returns></returns>
+        [WebMethod]
+        public bool updateTempCaDetail(XmlNode UserTempCaDetail)
+        {
+            //Key
+            string seqno = UserTempCaDetail.SelectSingleNode("//UseOrgSeqNO").InnerText;
+            string docno = UserTempCaDetail.SelectSingleNode("//DocNO").InnerText;
+            string flowid = UserTempCaDetail.SelectSingleNode("//FlowId").InnerText;
+            //使用臨時憑證時須新增一筆
+            string rpsdepid = UserTempCaDetail.SelectSingleNode("//RpsDepID") == null ? "" : UserTempCaDetail.SelectSingleNode("//RpsDepID").InnerText;
+            string rpsdepnam = UserTempCaDetail.SelectSingleNode("//RpsDepNam") == null ? "" : UserTempCaDetail.SelectSingleNode("//RpsDepNam").InnerText;
+            string rpsdivid = UserTempCaDetail.SelectSingleNode("//RpsDivID") == null ? "" : UserTempCaDetail.SelectSingleNode("//RpsDivID").InnerText;
+            string rpsdivnam = UserTempCaDetail.SelectSingleNode("//RpsDivNam") == null ? "" : UserTempCaDetail.SelectSingleNode("//RpsDivNam").InnerText;
+            string rpsuserid = UserTempCaDetail.SelectSingleNode("//RpsUserID") == null ? "" : UserTempCaDetail.SelectSingleNode("//RpsUserID").InnerText;
+            string rpsusernam = UserTempCaDetail.SelectSingleNode("//RpsUserNam") == null ? "" : UserTempCaDetail.SelectSingleNode("//RpsUserNam").InnerText;
+            string rpstime = UserTempCaDetail.SelectSingleNode("//RpsTime") == null ? "" : UserTempCaDetail.SelectSingleNode("//RpsTime").InnerText;
+            string applydesc = UserTempCaDetail.SelectSingleNode("//ApplyDesc") == null ? "" : UserTempCaDetail.SelectSingleNode("//ApplyDesc").InnerText;   
+            //補簽時需update的資料
+            string remdepid = UserTempCaDetail.SelectSingleNode("//RemDepID") == null ? "" : UserTempCaDetail.SelectSingleNode("//RemDepID").InnerText;
+            string remdepnam = UserTempCaDetail.SelectSingleNode("//RemDepNam") == null ? "" : UserTempCaDetail.SelectSingleNode("//RemDepNam").InnerText;
+            string remdivid = UserTempCaDetail.SelectSingleNode("//RemDivID") == null ? "" : UserTempCaDetail.SelectSingleNode("//RemDivID").InnerText;
+            string remdivnam = UserTempCaDetail.SelectSingleNode("//RemDivNam") == null ? "" : UserTempCaDetail.SelectSingleNode("//RemDivNam").InnerText;
+            string remuserid = UserTempCaDetail.SelectSingleNode("//RemUserID") == null ? "" : UserTempCaDetail.SelectSingleNode("//RemUserID").InnerText;
+            string remusernam = UserTempCaDetail.SelectSingleNode("//RemUserNam") == null ? "" : UserTempCaDetail.SelectSingleNode("//RemUserNam").InnerText;
+            string remtime = UserTempCaDetail.SelectSingleNode("//RemTime") == null ? "" : UserTempCaDetail.SelectSingleNode("//RemTime").InnerText;
+            string reason = UserTempCaDetail.SelectSingleNode("//RemReason") == null ? "" : UserTempCaDetail.SelectSingleNode("//RemReason").InnerText;
+            string cretime = rpstime;
+            string rsvA = UserTempCaDetail.SelectSingleNode("//RsvFieldA") == null ? "" : UserTempCaDetail.SelectSingleNode("//RsvFieldA").InnerText;
+            string rsvB = UserTempCaDetail.SelectSingleNode("//RsvFieldB") == null ? "" : UserTempCaDetail.SelectSingleNode("//RsvFieldB").InnerText;
+
+            SqlParameter[] Parms = new SqlParameter[] {
+                    new SqlParameter("@SeqNO", SqlDbType.SmallInt),
+					new SqlParameter("@DocNO", SqlDbType.Char),
+                    new SqlParameter("@FlowId", SqlDbType.NVarChar)};
+            Parms[0].Value = seqno;
+            Parms[1].Value = docno;
+            Parms[2].Value = flowid;
+            string sqlstr = "select * from UserTempCaDetail where UseOrgSeqNO = @SeqNO and DocNO = @DocNO and FlowID = @FlowId";
+
+            using (SqlDataReader sdr = SqlHelper.ExecuteReader(SqlHelper.ConnectionStringLocalTransaction, CommandType.Text, sqlstr, Parms))
+            {
+                //update
+                if (sdr.Read())
+                {
+                    sqlstr = "update UserTempCaDetail set RemDepID = @RemDepID , RemDepNam = @RemDepNam , RemDivID = @RemDivID , RemDivNam = @RemDivNam , RemUserID = @RemUserID , ";
+                    sqlstr += "RemUserNam = @RemUserNam , RemTime = @RemTime , RemReason = @RemReason WHERE (UseOrgSeqNO = @SeqNO AND DocNO = @DocNO And FlowID = @FlowId)";
+                    SqlParameter[] aParm = new SqlParameter[] {
+                    new SqlParameter("@SeqNO", SqlDbType.SmallInt),
+					new SqlParameter("@DocNO", SqlDbType.Char),
+                    new SqlParameter("@FlowId", SqlDbType.NChar),
+                    new SqlParameter("@RemDepID",SqlDbType.NChar), 
+                    new SqlParameter("@RemDepNam",SqlDbType.NChar),
+                    new SqlParameter("@RemDivID",SqlDbType.NChar),
+                    new SqlParameter("@RemDivNam",SqlDbType.NChar),
+                    new SqlParameter("@RemUserID",SqlDbType.NChar),
+                    new SqlParameter("@RemUserNam",SqlDbType.NChar),
+                    new SqlParameter("@RemTime",SqlDbType.NChar),
+                    new SqlParameter("@RemReason",SqlDbType.NChar)};
+                    aParm[0].Value = seqno;
+                    aParm[1].Value = docno;
+                    aParm[2].Value = flowid;
+                    aParm[3].Value = remdepid;
+                    aParm[4].Value = remdepnam;
+                    aParm[5].Value = remdivid;
+                    aParm[6].Value = remdivnam;
+                    aParm[7].Value = remuserid;
+                    aParm[8].Value = remusernam;
+                    aParm[9].Value = remtime;
+                    aParm[10].Value = reason;
+                    int rtn = SqlHelper.ExecuteNonQuery(SqlHelper.ConnectionStringLocalTransaction, CommandType.Text, sqlstr, aParm);
+                    if (rtn != 1)
+                        return false;
+                    else
+                        return true;
+
+                }
+                else //insert
+                {
+                    sqlstr = "insert into UserTempCaDetail (UseOrgSeqNO,DocNO,RpsDepID,RpsDepNam,RpsDivID,RpsDivNam,RpsUserID,RpsUserNam,RpsTime,RemDepID,RemDepNam,RemDivID,RemDivNam,RemUserID,RemUserNam,RemTime,FlowID,RemReason,RsvFieldA,RsvFieldB,CreTime,ApplyDesc,ApplyTime)";
+                    sqlstr += " VALUES (@SeqNO,@DocNO,@RpsDepID,@RpsDepNam,@RpsDivID,@RpsDivNam,@RpsUserID,@RpsUserNam,@RpsTime,@RemDepID,@RemDepNam,@RemDivID,@RemDivNam,@RemUserID,@RemUserNam,@RemTime,@FlowId,@RemReason,@RsvFieldA,@RsvFieldB,@CreTime,@applydesc,'')";
+                    SqlParameter[] bParm = new SqlParameter[] {
+                    new SqlParameter("@SeqNO", SqlDbType.SmallInt),
+					new SqlParameter("@DocNO", SqlDbType.Char),
+                    new SqlParameter("@FlowId", SqlDbType.NChar),
+                    new SqlParameter("@RemDepID",SqlDbType.NChar), 
+                    new SqlParameter("@RemDepNam",SqlDbType.NChar),
+                    new SqlParameter("@RemDivID",SqlDbType.NChar),
+                    new SqlParameter("@RemDivNam",SqlDbType.NChar),
+                    new SqlParameter("@RemUserID",SqlDbType.NChar),
+                    new SqlParameter("@RemUserNam",SqlDbType.NChar),
+                    new SqlParameter("@RemTime",SqlDbType.NChar),
+                    new SqlParameter("@RemReason",SqlDbType.NChar),
+                    new SqlParameter("@RpsDepID",SqlDbType.NChar), 
+                    new SqlParameter("@RpsDepNam",SqlDbType.NChar),
+                    new SqlParameter("@RpsDivID",SqlDbType.NChar),
+                    new SqlParameter("@RpsDivNam",SqlDbType.NChar),
+                    new SqlParameter("@RpsUserID",SqlDbType.NChar),
+                    new SqlParameter("@RpsUserNam",SqlDbType.NChar),
+                    new SqlParameter("@RpsTime",SqlDbType.NChar),
+                    new SqlParameter("@RsvFieldA",SqlDbType.NChar),
+                    new SqlParameter("@RsvFieldB",SqlDbType.NChar),
+                    new SqlParameter("@CreTime",SqlDbType.NChar),
+                    new SqlParameter("@applydesc",SqlDbType.NVarChar)};
+                    bParm[0].Value = seqno;
+                    bParm[1].Value = docno;
+                    bParm[2].Value = flowid;
+                    bParm[3].Value = remdepid;
+                    bParm[4].Value = remdepnam;
+                    bParm[5].Value = remdivid;
+                    bParm[6].Value = remdivnam;
+                    bParm[7].Value = remuserid;
+                    bParm[8].Value = remusernam;
+                    bParm[9].Value = remtime;
+                    bParm[10].Value = reason;
+                    bParm[11].Value = rpsdepid;
+                    bParm[12].Value = rpsdepnam;
+                    bParm[13].Value = rpsdivid;
+                    bParm[14].Value = rpsdivnam;
+                    bParm[15].Value = rpsuserid;
+                    bParm[16].Value = rpsusernam;
+                    bParm[17].Value = rpstime;
+                    bParm[18].Value = "";
+                    bParm[19].Value = "";
+                    bParm[20].Value = cretime;
+                    bParm[21].Value = applydesc;
+                    int rtn = SqlHelper.ExecuteNonQuery(SqlHelper.ConnectionStringLocalTransaction, CommandType.Text, sqlstr, bParm);
+                    if (rtn != 1)
+                        return false;
+                    else
+                        return true;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 取得彙併辦公文文號
+        /// </summary>
+        /// <param name="_useorgseqno">機關代碼</param>
+        /// <param name="_docno">文號</param>
+        /// <returns>第一筆為母文其餘子文</returns>
+        [WebMethod]
+        public List<string> getMergeData(string _useorgseqno, string _docno)
+        {
+            string sqlstr = "select * from CombineDetail where ParDocNO = @DocNO AND UseOrgSeqNO = @SeqNO";
+            SqlParameter[] Parms = new SqlParameter[] {
+                    new SqlParameter("@SeqNO", SqlDbType.SmallInt,2),
+					new SqlParameter("@DocNO", SqlDbType.Char, _docno.Length)};
+            Parms[0].Value = _useorgseqno;
+            Parms[1].Value = _docno;
+            List<string> rtn = new List<string>();
+            using (SqlDataReader sdr = SqlHelper.ExecuteReader(SqlHelper.ConnectionStringLocalTransaction, CommandType.Text, sqlstr, Parms))
+            {
+                if (sdr.HasRows)
+                {
+                    rtn.Add(_docno);
+                    while (sdr.Read())
+                    {
+                        rtn.Add(sdr["ChiDocNO"].ToString());
+                    }
+                }
+                else
+                {
+                    sqlstr = "select * from CombineDetail where ChiDocNO = @DocNO AND UseOrgSeqNO = @SeqNO";
+                    using (SqlDataReader dr = SqlHelper.ExecuteReader(SqlHelper.ConnectionStringLocalTransaction, CommandType.Text, sqlstr, Parms))
+                    {
+                        if (dr.HasRows)
+                        {
+                            while (dr.Read())
+                            {
+                                if (!rtn.Contains(dr["ParDocNO"].ToString()))
+                                    rtn.Add(dr["ParDocNO"].ToString());
+
+                                if (!rtn.Contains(dr["ChiDocNO"].ToString()))
+                                    rtn.Add(dr["ChiDocNO"].ToString());
+                            }
+                        }
+                    }
+                }
+            }
+            return rtn;
+        }
+
+        /// <summary>
+        /// 取得線上簽核si檔內容
+        /// </summary>
+        /// <param name="_docno">文號</param>
+        /// <returns>null表示尚無裝檔,用來判斷是否須新建</returns>
+        [WebMethod]
+        public XmlDocument GetSiXML(string _docno)
+        {
+            return readSiFile(_docno);
+        }
+
+        [WebMethod]
+        public bool SiExist(string _docno)
+        {
+            string sipath = Path.Combine(ConfigurationSettings.AppSettings["siRootPath"], _docno.Substring(0, 3));
+            sipath = Path.Combine(sipath, _docno.Substring(_docno.Length - 2, 2));
+            //sipath = Path.Combine(sipath, _docno.Substring(5));
+            sipath = Path.Combine(sipath, _docno);
+            if (_DepId != "")
+                sipath = Path.Combine(sipath, _DepId);
+            SiFilePath = sipath;
+            if (!File.Exists(Path.Combine(SiFilePath, _docno + ".dsicdp")))
+                return false;
+            else
+                return true;
+        }
+
+        /// <summary>
+        /// 取出並會的si
+        /// </summary>
+        /// <param name="_docno"></param>
+        /// <param name="depid"></param>
+        /// <returns></returns>
+        [WebMethod]
+        public XmlDocument GetDepSiXML(string _docno,string depid)
+        {
+            _DepId = depid;
+            return readSiFile(_docno);
+        }
+
+        /// <summary>
+        /// 將補簽後的的si檔暫存在Resign資料夾
+        /// </summary>
+        /// <param name="_docno">文號</param>
+        /// <param name="resignID">補簽ID</param>
+        /// <param name="siDoc">簽完後的xml</param>
+        /// <returns></returns>
+        [WebMethod]
+        public bool SaveReSignXML(string _docno, string resignID, XmlDocument siDoc)
+        {
+            //擺放路徑 前3碼 + 4,5碼 + 餘碼 + 文號
+            string sipath = Path.Combine(ConfigurationSettings.AppSettings["siRootPath"], _docno.Substring(0, 3));
+            if (!Directory.Exists(sipath)) Directory.CreateDirectory(sipath);
+            sipath = Path.Combine(sipath, _docno.Substring(_docno.Length -2 , 2));
+            if (!Directory.Exists(sipath)) Directory.CreateDirectory(sipath);
+            //sipath = Path.Combine(sipath, _docno.Substring(5));
+            //if (!Directory.Exists(sipath)) Directory.CreateDirectory(sipath);
+            sipath = Path.Combine(sipath, _docno);
+            if (!Directory.Exists(sipath)) Directory.CreateDirectory(sipath);
+            sipath = Path.Combine(sipath, "ReSign");
+            if (!Directory.Exists(sipath)) Directory.CreateDirectory(sipath);
+            sipath = Path.Combine(sipath, resignID);
+            if (File.Exists(sipath)) File.Delete(sipath);
+            siDoc.Save(sipath);
+            return true;
+        }
+
+        /// <summary>
+        /// 將該文所有補簽資料並回主si檔
+        /// </summary>
+        /// <param name="_docno">文號</param>
+        /// <returns></returns>
+        [WebMethod]
+        public bool MergeReSignXML(string _docno)
+        {
+            XmlDocument orgXml = readSiFile(_docno);
+            if (orgXml == null) return false;
+            XmlNodeList resignNode = orgXml.DocumentElement.GetElementsByTagName("補簽追認");
+            //先將現有的節點刪除重新產生
+            if (resignNode.Count == 1) orgXml.DocumentElement.RemoveChild(resignNode[0]);
+
+            //取出補的si檔並且併入原si檔
+            DirectoryInfo dir = new DirectoryInfo(Path.Combine(SiFilePath, "ReSign"));
+            try
+            {
+                if (dir.GetFiles().Length > 0)
+                {
+                    XmlNode _補簽追認 = orgXml.CreateElement("補簽追認") as XmlNode;
+
+                    int recnt = 0;
+                    foreach (FileInfo f in dir.GetFiles())
+                    {
+                        XmlDocument reXml = new XmlDocument();
+                        reXml.XmlResolver = null;
+                        reXml.Load(f.FullName);
+                        reXml.PreserveWhitespace = true;
+                        foreach (XmlNode x in reXml.DocumentElement.GetElementsByTagName("補簽人員"))
+                        {
+                            _補簽追認.AppendChild(_補簽追認.OwnerDocument.ImportNode(x, true));
+                            recnt++;
+                        }
+                    }
+                    XmlAttribute _補簽人員數 = orgXml.CreateAttribute("補簽人員數");
+                    _補簽人員數.Value = recnt.ToString();
+                    _補簽追認.Attributes.Append(_補簽人員數);
+                    orgXml.DocumentElement.GetElementsByTagName("線上簽核資訊")[0].AppendChild(orgXml.ImportNode(_補簽追認, true));
+                    orgXml.Save(Path.Combine(SiFilePath, "unzip") + "\\" + _docno + ".si");
+                    //將改完的資料再壓縮回檔案
+                    DCPWebService.GZip.Compress(Path.Combine(SiFilePath, "unzip"), SiFilePath, _docno + ".dsicdp");
+                }
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// 使用HSM做加簽
+        /// </summary>
+        /// <param name="digestXml">已算過HASH的XML</param>
+        /// <param name="sigid">計算加簽的tag id</param>
+        /// <returns>加簽過的xml字串</returns>
+        [WebMethod]
+        public string SignWithHSM(string digestXml, string sigid)
+        {
+            string servletURL = @"http://192.168.1.185:8232/SSServlet/SS";
+            string apiUser = "api";
+            string apiPass = "A033A528B603FED46F861D4B3542C417B99D41C8";
+
+            RA2AGENTATLLib.RA2FacadeClass ss = new RA2AGENTATLLib.RA2FacadeClass();
+
+            int rtn = ss.FSRA2_ServerAddURL(servletURL);
+            if (rtn != 0)
+            {
+                string errMsg = ss.FSRA2_GetErrorMsg();
+                return "err:" + errMsg ;
+            }
+
+            rtn = ss.FSRA2_Login(apiUser, apiPass, "This is a log.");
+            if (rtn != 0)
+            {
+                string errMsg = ss.FSRA2_GetErrorMsg();
+                return "err:" + errMsg;
+            }
+
+            string key1 = ss.FSRA2_GetKey1();
+            string keyName = "CPA-eDOC";
+            string apName = "DsicOP";
+            int iFlag = 0;
+
+            rtn = ss.FSSS_XMLSignByTemplateDigest(key1, keyName, digestXml, sigid, apName, iFlag, "This is a log.");
+            if (rtn != 0)
+            {
+                string errMsg = ss.FSRA2_GetErrorMsg();
+                return "err:" + errMsg;
+            }
+            string signxml = ss.FSSS_GetSignature();
+            return signxml;
+        }
+
+        /// <summary>
+        /// 註記封裝是否有完成
+        /// </summary>
+        /// <param name="modecode">模式代碼</param>
+        /// <param name="flowid">流程點ID</param>
+        /// <returns></returns>
+        [WebMethod]
+        public bool UpdateStatus(string modecode,string flowid,string oedocno)
+        {
+            string tblname = "";
+            string wherestr = "";
+            switch (modecode)
+            {
+                case "1":
+                case "2":
+                case "3":
+                    tblname = "RpsDepDetail";
+                    wherestr = "and ModTime = (Select Max(ModTime) from RpsDepDetail where WordDocNO='" + oedocno + "')";
+                    break;
+                case "6":
+                    tblname = "DepRegDetail";
+                    wherestr = "and ModTime = (Select Max(ModTime) from DepRegDetail where WordDocNO='" + oedocno + "')";
+                    break;
+                case "B":
+                    tblname = "ReviewDetail";
+                    wherestr = "and ModTime = (Select Max(ModTime) from ReviewDetail where WordDocNO='" + oedocno + "')";
+                    break;
+                case "7":
+                case "8":
+                case "G":
+                    tblname = "JudgeDetail";
+                    wherestr = "and JudTime = (Select Max(JudTime) from JudgeDetail where WordDocNO='" + oedocno + "')";
+                    break;
+                case "C":
+                case "9":
+                    return true;
+                    break;
+                default:
+                    break;
+            }
+            string sqlstr = "update " + tblname + " set flowid = @flowid where worddocno = @oedocno " + wherestr;
+            SqlParameter[] Parms = new SqlParameter[] {
+                    new SqlParameter("@oedocno", SqlDbType.Char),
+                    new SqlParameter("@flowid", SqlDbType.NChar)};
+            Parms[0].Value = oedocno;
+            Parms[1].Value = flowid;
+            int cnt = SqlHelper.ExecuteNonQuery(SqlHelper.ConnectionStringLocalTransaction, CommandType.Text, sqlstr, Parms);
+            if (cnt == 1)
+                return true;
+            else
+                return false;
+        }
+
+        /// <summary>
+        /// 讀取簽核電子檔XML內容
+        /// </summary>
+        /// <param name="_docno">公文文號</param>
+        /// <returns></returns>
+        private XmlDocument readSiFile(string _docno)
+        {
+            string sipath = Path.Combine(ConfigurationSettings.AppSettings["siRootPath"], _docno.Substring(0, 3));
+            sipath = Path.Combine(sipath, _docno.Substring(_docno.Length - 2, 2));
+            //sipath = Path.Combine(sipath, _docno.Substring(5));
+            sipath = Path.Combine(sipath, _docno);
+            if (_DepId != "")
+                sipath = Path.Combine(sipath, _DepId);
+            SiFilePath = sipath;
+            if (!File.Exists(Path.Combine(SiFilePath, _docno + ".dsicdp"))) return null;
+
+            GZipResult gr = DCPWebService.GZip.Decompress(sipath, Path.Combine(sipath, "unzip"), _docno + ".dsicdp");
+            if (!File.Exists(Path.Combine(sipath, "unzip") + "\\" + _docno + ".si"))
+            {
+                return null;
+            }
+            //取得原本的si檔
+            XmlDocument orgXml = new XmlDocument();
+            orgXml.XmlResolver = null;
+            orgXml.Load(Path.Combine(sipath, "unzip") + "\\" + _docno + ".si");
+            orgXml.PreserveWhitespace = true;
+            //DeletePathFiles(Path.Combine(sipath, "unzip"));
+            return orgXml;
+        }
+
+        /// <summary>
+        /// 依文號取得封裝檔路徑
+        /// </summary>
+        /// <param name="_docno">公文文號</param>
+        /// <returns></returns>
+        private string getsipath(string _docno)
+        {
+            //擺放路徑 前3碼 + 4,5碼 + 餘碼 + 文號
+            string sipath = Path.Combine(ConfigurationSettings.AppSettings["siRootPath"], _docno.Substring(0, 3));
+            if (!Directory.Exists(sipath)) Directory.CreateDirectory(sipath);
+            sipath = Path.Combine(sipath, _docno.Substring(_docno.Length-2 , 2));
+            if (!Directory.Exists(sipath)) Directory.CreateDirectory(sipath);
+            //sipath = Path.Combine(sipath, _docno.Substring(5));
+            //if (!Directory.Exists(sipath)) Directory.CreateDirectory(sipath);
+            sipath = Path.Combine(sipath, _docno);
+            if (!Directory.Exists(sipath)) Directory.CreateDirectory(sipath);
+            return sipath;
+        }
+
+        #region 檔案傳輸功能
+        /// <summary>
+        /// 上傳封裝的壓縮檔
+        /// </summary>
+        /// <param name="_docno">文號</param>
+        /// <param name="buffer">檔案內容</param>
+        /// <param name="Offset"></param>
+        [WebMethod]
+        public void UploadChunk(string _docno,  byte[] buffer, long Offset)
+        {
+            string FileName = _docno + ".dsicdp";
+            string FilePath = System.IO.Path.Combine(getsipath(_docno), FileName);
+
+            if (Offset == 0)	// new file, create an empty file
+                System.IO.File.Create(FilePath).Close();
+
+            // open a file stream and write the buffer.  Don't open with FileMode.Append because the transfer may wish to start a different point
+            using (System.IO.FileStream fs = new System.IO.FileStream(FilePath, System.IO.FileMode.Open, System.IO.FileAccess.ReadWrite, System.IO.FileShare.Read))
+            {
+                fs.Seek(Offset, System.IO.SeekOrigin.Begin);
+                fs.Write(buffer, 0, buffer.Length);
+            }
+        }
+
+        [WebMethod]
+        public void UploadDepChunk(string _docno, byte[] buffer, long Offset, string foldername)
+        {
+            string FileName = _docno + ".dsicdp";
+            string target = System.IO.Path.Combine(getsipath(_docno), foldername);
+            CreatePath(target);
+            string FilePath = System.IO.Path.Combine(target, FileName);
+
+            if (Offset == 0)	// new file, create an empty file
+                System.IO.File.Create(FilePath).Close();
+
+            // open a file stream and write the buffer.  Don't open with FileMode.Append because the transfer may wish to start a different point
+            using (System.IO.FileStream fs = new System.IO.FileStream(FilePath, System.IO.FileMode.Open, System.IO.FileAccess.ReadWrite, System.IO.FileShare.Read))
+            {
+                fs.Seek(Offset, System.IO.SeekOrigin.Begin);
+                fs.Write(buffer, 0, buffer.Length);
+            }
+        }
+        
+        /// <summary>
+        /// 下載壓縮的封裝檔
+        /// </summary>
+        /// <param name="_docno"></param>
+        /// <param name="Offset"></param>
+        /// <param name="BufferSize"></param>
+        /// <returns></returns>
+        [WebMethod]
+        public byte[] DownloadChunk(string _docno)
+        {
+            long Offset = 0;
+            int BufferSize;
+            string FileName = _docno + ".dsicdp";
+            string FilePath = System.IO.Path.Combine(getsipath(_docno), FileName);
+
+            long FileSize = new System.IO.FileInfo(FilePath).Length;
+            BufferSize = (int)FileSize;
+            byte[] TmpBuffer;
+            int BytesRead;
+
+            try
+            {
+                using (System.IO.FileStream fs = new System.IO.FileStream(FilePath, System.IO.FileMode.Open, System.IO.FileAccess.Read, System.IO.FileShare.Read))
+                {
+                    fs.Seek(Offset, System.IO.SeekOrigin.Begin);	// this is relevent during a retry. otherwise, it just seeks to the start
+                    TmpBuffer = new byte[BufferSize];
+                    BytesRead = fs.Read(TmpBuffer, 0, BufferSize);	// read the first chunk in the buffer (which is re-used for every chunk)
+                }
+                if (BytesRead != BufferSize)
+                {
+                    // the last chunk will almost certainly not fill the buffer, so it must be trimmed before returning
+                    byte[] TrimmedBuffer = new byte[BytesRead];
+                    Array.Copy(TmpBuffer, TrimmedBuffer, BytesRead);
+                    return TrimmedBuffer;
+                }
+                else
+                    return TmpBuffer;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        [WebMethod]
+        public byte[] DownloadDepChunk(string _docno,  string foldername)
+        {
+            
+            string FileName = _docno + ".dsicdp";
+            //第一個會辦人需重承辦處讀取檔案
+            if (!Directory.Exists(System.IO.Path.Combine(getsipath(_docno), foldername)))
+            {
+                return DownloadChunk(_docno);
+            }
+            string FilePath = System.IO.Path.Combine(System.IO.Path.Combine(getsipath(_docno), foldername), FileName);
+            long Offset = 0;
+            int BufferSize;
+            // check that requested file exists
+            if (!System.IO.File.Exists(FilePath))
+                return null;
+
+            long FileSize = new System.IO.FileInfo(FilePath).Length;
+            BufferSize = (int)FileSize;
+            // if the requested Offset is larger than the file, quit.
+            if (Offset > FileSize)
+                return null;
+
+            // open the file to return the requested chunk as a byte[]
+            byte[] TmpBuffer;
+            int BytesRead;
+
+            try
+            {
+                using (System.IO.FileStream fs = new System.IO.FileStream(FilePath, System.IO.FileMode.Open, System.IO.FileAccess.Read, System.IO.FileShare.Read))
+                {
+                    fs.Seek(Offset, System.IO.SeekOrigin.Begin);	// this is relevent during a retry. otherwise, it just seeks to the start
+                    TmpBuffer = new byte[BufferSize];
+                    BytesRead = fs.Read(TmpBuffer, 0, BufferSize);	// read the first chunk in the buffer (which is re-used for every chunk)
+                }
+                if (BytesRead != BufferSize)
+                {
+                    // the last chunk will almost certainly not fill the buffer, so it must be trimmed before returning
+                    byte[] TrimmedBuffer = new byte[BytesRead];
+                    Array.Copy(TmpBuffer, TrimmedBuffer, BytesRead);
+                    return TrimmedBuffer;
+                }
+                else
+                    return TmpBuffer;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 取得server上檔案大小
+        /// </summary>
+        /// <param name="_docno"></param>
+        /// <returns></returns>
+        [WebMethod]
+        public long GetFileSize(string _docno)
+        {
+            string FileName = _docno + ".dsicdp";
+            string FilePath = System.IO.Path.Combine(getsipath(_docno), FileName);
+
+            // check that requested file exists
+            if (!System.IO.File.Exists(FilePath))
+                return -1;
+
+            return new System.IO.FileInfo(FilePath).Length;
+        }
+
+        [WebMethod]
+        public long GetDepFileSize(string _docno,string DepId)
+        {
+            string FileName = _docno + ".dsicdp";
+            if (!Directory.Exists(Path.Combine(getsipath(_docno), DepId)))
+            {
+                return GetFileSize(_docno);
+            }
+            string FilePath = System.IO.Path.Combine(Path.Combine(getsipath(_docno), DepId), FileName);
+
+            // check that requested file exists
+            if (!System.IO.File.Exists(FilePath))
+                return -1;
+
+            return new System.IO.FileInfo(FilePath).Length;
+        }
+
+        [WebMethod]
+        public List<string> GetFilesList(string UploadPath, out bool DirectoryExist)
+        {
+            System.IO.DirectoryInfo df;
+            List<string> files = new List<string>();
+
+            DirectoryExist = true;
+            try
+            {
+                df = new System.IO.DirectoryInfo(UploadPath);
+                if (!df.Exists)
+                {
+                    DirectoryExist = false;
+                    goto Exit;
+                }
+
+                foreach (string s in System.IO.Directory.GetFiles(UploadPath))
+                {
+                    try
+                    {
+                        files.Add(System.IO.Path.GetFileName(s));
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+                }
+            }
+            catch
+            {
+                try
+                {
+                    DirectoryExist = false;
+                    files.Clear();
+                }
+                catch
+                {
+                    files = null;
+                }
+                goto Exit;
+            }
+
+        Exit:
+            return files;
+        }
+
+        private bool CreatePath(string ServerPath)
+        {
+            bool bRes = true;
+            System.IO.DirectoryInfo df;
+
+            try
+            {
+                df = new System.IO.DirectoryInfo(ServerPath);
+                if (!df.Exists)
+                {
+                    df = System.IO.Directory.CreateDirectory(ServerPath);
+                }
+            }
+            catch
+            {
+                bRes = false;
+                goto Exit;
+            }
+
+        Exit:
+            return bRes;
+        }
+
+        private bool DeletePath(string ServerPath)
+        {
+            bool bRes = true;
+            System.IO.DirectoryInfo df;
+
+            try
+            {
+                df = new System.IO.DirectoryInfo(ServerPath);
+                if (df.Exists)
+                {
+                    System.IO.Directory.Delete(ServerPath, true);
+                }
+            }
+            catch
+            {
+                bRes = false;
+                goto Exit;
+            }
+
+        Exit:
+            return bRes;
+        }
+
+        private bool DeletePathFiles(string ServerPath)
+        {
+            bool bRes = true;
+            System.IO.DirectoryInfo df;
+
+            try
+            {
+                df = new System.IO.DirectoryInfo(ServerPath);
+                if (df.Exists)
+                {
+                    foreach (string s in System.IO.Directory.GetFiles(ServerPath))
+                    {
+                        try
+                        {
+                            System.IO.File.Delete(s);
+                        }
+                        catch
+                        {
+                            continue;
+                        }
+                    }
+                }
+            }
+            catch
+            {
+                bRes = false;
+                goto Exit;
+            }
+
+        Exit:
+            return bRes;
+        }
+
+        #endregion
+    }
+}

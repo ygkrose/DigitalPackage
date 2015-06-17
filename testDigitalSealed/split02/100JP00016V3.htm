@@ -1,0 +1,217 @@
+<html>
+	<head>
+		<title></title>
+			<meta http-equiv="Content-type" content="text/html; charset=utf8" />
+
+		
+		<OBJECT id="myobj" codebase="TWCAPKCS11ATXv2.cab#version=1,0,0,2" classid="clsid:8A5784FE-915A-42ED-8A51-E914439E56DB" VIEWASTEXT></OBJECT>
+
+</head>
+	<body>
+		<form name="Form" action="">
+			<p>--------------GetVersion-----------------------</p>
+			<input id="button1" type="button" value="GetVersion" name="GetVersionBtn" onclick="F_GetVersionBtn()">
+			ret<input name ="retGetVersion" value="" >	
+			</p>
+
+			<p>--------------SetTokenType-----------------------</p>
+			 <input name="SetTokenType_type" id="SetTokenType_type" value="2" > 
+			<input id="button1" type="button" value="SetTokenType" name="SetTokenTypeBtn" onclick="F_SetTokenTypeBtn()">
+			ret<input name ="retSetTokenType" value="">	
+			</p>
+			
+			<p>--------------GetCardStatus-----------------------</p>
+			<input id="button1" type="button" value="GetCardStatus" name="GetCardStatusBtn" onclick="F_GetCardStatusBtn()">
+			ret<input name ="retGetCardStatus" value="" >	
+			</p>
+			
+			<p>--------------GetCardType-----------------------</p>
+			<input id="button1" type="button" value="GetCardType" name="GetCardTypeBtn" onclick="F_GetCardTypeBtn()">
+			ret<input name ="retGetCardType" value="" >	
+			</p>
+			
+			<p>--------------GetTWCAPKICardInfo-----------------------</p>
+			<input id="button1" type="button" value="GetTWCAPKICardInfo" name="GetTWCAPKICardInfoBtn" onclick="F_GetTWCAPKICardInfoBtn()">
+			ret<input name ="retGetTWCAPKICardInfo" value="" >	
+			</p>
+			<p>
+			GetTWCACardSN<input name ="GetTWCACardSN" value="" >	
+			GetTWCACardType<input name ="GetTWCACardType" value="" >	
+			</p>
+				
+			<p>--------------Login-----------------------</p>
+			PINCode<input name="Login_PINCode" id="Login_PINCode" value="123456" > 
+			<input id="button1" type="button" value="Login" name="LoginBtn" onclick="F_LoginBtn()">
+			ret<input name ="retLogin" value="" >	
+			</p>
+
+			<p>--------------Logout-----------------------</p>
+			<input id="button1" type="button" value="Logout" name="LogoutBtn" onclick="F_LogoutBtn()">
+			ret<input name ="retLogout" value="" >	
+			</p>			
+			
+			<p>--------------SelectCert-----------------------</p>
+			CertType<input name="SelectCert_CertType" id="SelectCert_CertType" value="1" > 
+			<input id="button1" type="button" value="SelectCert" name="SelectCertBtn" onclick="F_SelectCertBtn()">
+			ret<input name ="retSelectCert" value="" >	
+			<p>
+			GetSelectedCertB64<input name ="GetSelectedCertB64" value="" >	
+			GetSelectedCertSerial<input name ="GetSelectedCertSerial" value="" ><br>	
+			GetSelectedCertSubject<input name ="GetSelectedCertSubject" value="" >
+			GetSelectedCertIssuer<input name ="GetSelectedCertIssuer" value="" ><br>	
+			GetSelectedCertNotBefore<input name ="GetSelectedCertNotBefore" value="" >
+			GetSelectedCertNotAfter<input name ="GetSelectedCertNotAfter" value="" >
+			</p>
+			
+			<p>--------------SignPKCS7-----------------------</p>
+			toSigndata<input name="toSigndata" id="toSigndata" value="test" > 
+			<input id="button1" type="button" value="SignPKCS7" name="SignPKCS7Btn" onclick="F_SignPKCS7Btn()">
+			ret<input name ="retSignPKCS7" value="" >	
+			<p>
+			GetPKCS7Data<input name ="GetPKCS7Data" value="" >	
+			</p>
+			
+			<p>--------------SignPKCS1-----------------------</p>
+			toSigndata<input name="toSigndata1" id="toSigndata1" value="test" > 
+			<input id="button1" type="button" value="SignPKCS1" name="SignPKCS1Btn" onclick="F_SignPKCS1Btn()">
+			ret<input name ="retSignPKCS1" value="" >	
+			<p>
+			GetPKCS1Data<input name ="GetPKCS1Data" value="" >	
+			</p>
+			
+			<p>--------------GetErrorCode----------------------</p>
+			<input id="button1" type="button" value="GetErrorCode" name="GetErrorCodeBtn" onclick="F_GetErrorCodeBtn()">
+			ret<input name ="retGetErrorCode" value="" >	
+			</p>
+			
+			<p>--------------GetErrorMsg----------------------</p>
+			<input id="button1" type="button" value="GetErrorMsg" name="GetErrorMsgBtn" onclick="F_GetErrorMsgBtn()">
+			ret<input name ="retGetErrorMsg" value="" >	
+			</p>
+			
+
+		</p>	
+		</form>
+
+
+	</body>
+</html>
+		<script language="JavaScript">
+	
+			function F_GetErrorMsgBtn() {
+					
+				document.Form.retGetErrorMsg.value=myobj.GetErrorMsg();
+				
+			}
+		
+			function F_GetErrorCodeBtn() {
+					
+				document.Form.retGetErrorCode.value=myobj.GetErrorCode();
+				
+			}
+		
+		
+			function F_SignPKCS7Btn() {
+					
+				//for(var i=0;i<100;i++)
+				{	
+					var ret=myobj.SignPKCS7(document.Form.toSigndata.value);
+					document.Form.retSignPKCS7.value=ret;
+					if(ret==0)
+					{
+					  document.Form.GetPKCS7Data.value=myobj.GetPKCS7Data();
+					}
+				}
+			}
+			function F_SignPKCS1Btn() {
+					
+				//for(var i=0;i<100;i++)
+				{	
+					var ret=myobj.SignPKCS1(document.Form.toSigndata1.value);
+					document.Form.retSignPKCS1.value=ret;
+					if(ret==0)
+					{
+					  document.Form.GetPKCS1Data.value=myobj.GetPKCS1Data();
+					}
+				}
+			}
+
+			function F_SelectCertBtn() {
+					
+				var ret=myobj.SelectCert(document.Form.SelectCert_CertType.value);
+				document.Form.retSelectCert.value=ret;
+				if(ret==0)
+				{
+			
+				  document.Form.GetSelectedCertB64.value=myobj.GetSelectedCertB64();
+				  document.Form.GetSelectedCertSerial.value=myobj.GetSelectedCertSerial();
+				  document.Form.GetSelectedCertSubject.value=myobj.GetSelectedCertSubject();
+				  document.Form.GetSelectedCertIssuer.value=myobj.GetSelectedCertIssuer();
+				  document.Form.GetSelectedCertNotBefore.value=myobj.GetSelectedCertNotBefore();
+				  document.Form.GetSelectedCertNotAfter.value=myobj.GetSelectedCertNotAfter();
+				}
+			}
+			
+			
+			function F_LogoutBtn() {
+					
+				var ret=myobj.Logout();
+				document.Form.retLogout.value=ret;
+			}
+			
+			function F_readGPKIUserDataBtn() {
+					
+				var ret=myobj.readGPKIUserData(document.Form.l_uchptrUserPIN.value,document.Form.l_uchptrSNO.value);
+				document.Form.retreadGPKIUserData.value=ret;
+				if(ret==0)
+				{
+				  document.Form.getGPKIUserData.value=myobj.getGPKIUserData();
+				}
+			}
+		
+			function F_LoginBtn() {
+					
+				var ret=myobj.Login(document.Form.Login_PINCode.value);
+				document.Form.retLogin.value=ret;
+			}
+
+			function F_GetTWCAPKICardInfoBtn() {
+					
+				var ret=myobj.GetTWCAPKICardInfo();
+				document.Form.retGetTWCAPKICardInfo.value=ret;
+				if(ret==0)
+				{
+					document.Form.GetTWCACardSN.value=myobj.GetTWCACardSN();
+					document.Form.GetTWCACardType.value=myobj.GetTWCACardType();
+								
+				}
+			}
+		
+			function F_GetCardTypeBtn() {
+					
+				var ret=myobj.GetCardType();
+				document.Form.retGetCardType.value=ret;
+			}
+		
+			function F_GetCardStatusBtn() {
+					
+				var ret=myobj.GetCardStatus();
+				document.Form.retGetCardStatus.value=ret;
+			}
+		
+			function F_GetVersionBtn() {
+					
+				var ret=myobj.GetVersion();
+				document.Form.retGetVersion.value=ret;
+			
+				
+			}		
+					
+			function F_SetTokenTypeBtn() {
+					
+				var ret=myobj.SetTokenType(document.Form.SetTokenType_type.value);
+				document.Form.retSetTokenType.value=ret;
+			}
+			
+
+		</script>

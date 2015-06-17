@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.dsic.com.tw/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.dsic.com.tw/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.dsic.com.tw/">
+      <s:element name="getWordDocAttInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_orgid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getWordDocAttInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getWordDocAttInfoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getInDocAttInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_orgid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getInDocAttInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getInDocAttInfoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateTempCaDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserTempCaDetail">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateTempCaDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateTempCaDetailResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMergeData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_orgid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMergeDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMergeDataResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSiXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSiXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSiXMLResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiExist">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiExistResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SiExistResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepSiXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="depid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepSiXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDepSiXMLResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReSignXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resignID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="siDoc">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReSignXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveReSignXMLResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MergeReSignXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MergeReSignXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MergeReSignXMLResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SignWithHSM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="digestXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sigid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="keyname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SignWithHSMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SignWithHSMResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modecode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flowid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oedocno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_orgid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DocNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateStatusResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadChunk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="buffer" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="Offset" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadChunkResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UploadDepChunk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="buffer" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="Offset" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="foldername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadDepChunkResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DownloadChunk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadChunkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadChunkResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadDepChunk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="foldername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadDepChunkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadDepChunkResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileSize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileSizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetFileSizeResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepFileSize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_docno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DepId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepFileSizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetDepFileSizeResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFilesList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadPath" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFilesListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFilesListResult" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="DirectoryExist" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getWordDocAttInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:getWordDocAttInfo" />
+  </wsdl:message>
+  <wsdl:message name="getWordDocAttInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:getWordDocAttInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getInDocAttInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:getInDocAttInfo" />
+  </wsdl:message>
+  <wsdl:message name="getInDocAttInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:getInDocAttInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateTempCaDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:updateTempCaDetail" />
+  </wsdl:message>
+  <wsdl:message name="updateTempCaDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:updateTempCaDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMergeDataSoapIn">
+    <wsdl:part name="parameters" element="tns:getMergeData" />
+  </wsdl:message>
+  <wsdl:message name="getMergeDataSoapOut">
+    <wsdl:part name="parameters" element="tns:getMergeDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSiXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSiXML" />
+  </wsdl:message>
+  <wsdl:message name="GetSiXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSiXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiExistSoapIn">
+    <wsdl:part name="parameters" element="tns:SiExist" />
+  </wsdl:message>
+  <wsdl:message name="SiExistSoapOut">
+    <wsdl:part name="parameters" element="tns:SiExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDepSiXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDepSiXML" />
+  </wsdl:message>
+  <wsdl:message name="GetDepSiXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDepSiXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveReSignXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveReSignXML" />
+  </wsdl:message>
+  <wsdl:message name="SaveReSignXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveReSignXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="MergeReSignXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:MergeReSignXML" />
+  </wsdl:message>
+  <wsdl:message name="MergeReSignXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:MergeReSignXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="SignWithHSMSoapIn">
+    <wsdl:part name="parameters" element="tns:SignWithHSM" />
+  </wsdl:message>
+  <wsdl:message name="SignWithHSMSoapOut">
+    <wsdl:part name="parameters" element="tns:SignWithHSMResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadChunkSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadChunk" />
+  </wsdl:message>
+  <wsdl:message name="UploadChunkSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadChunkResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadDepChunkSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadDepChunk" />
+  </wsdl:message>
+  <wsdl:message name="UploadDepChunkSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadDepChunkResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadChunkSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadChunk" />
+  </wsdl:message>
+  <wsdl:message name="DownloadChunkSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadChunkResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadDepChunkSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadDepChunk" />
+  </wsdl:message>
+  <wsdl:message name="DownloadDepChunkSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadDepChunkResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileSizeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileSize" />
+  </wsdl:message>
+  <wsdl:message name="GetFileSizeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileSizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDepFileSizeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDepFileSize" />
+  </wsdl:message>
+  <wsdl:message name="GetDepFileSizeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDepFileSizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFilesListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFilesList" />
+  </wsdl:message>
+  <wsdl:message name="GetFilesListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFilesListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DCPWSESoap">
+    <wsdl:operation name="getWordDocAttInfo">
+      <wsdl:input message="tns:getWordDocAttInfoSoapIn" />
+      <wsdl:output message="tns:getWordDocAttInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getInDocAttInfo">
+      <wsdl:input message="tns:getInDocAttInfoSoapIn" />
+      <wsdl:output message="tns:getInDocAttInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTempCaDetail">
+      <wsdl:input message="tns:updateTempCaDetailSoapIn" />
+      <wsdl:output message="tns:updateTempCaDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMergeData">
+      <wsdl:input message="tns:getMergeDataSoapIn" />
+      <wsdl:output message="tns:getMergeDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiXML">
+      <wsdl:input message="tns:GetSiXMLSoapIn" />
+      <wsdl:output message="tns:GetSiXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiExist">
+      <wsdl:input message="tns:SiExistSoapIn" />
+      <wsdl:output message="tns:SiExistSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepSiXML">
+      <wsdl:input message="tns:GetDepSiXMLSoapIn" />
+      <wsdl:output message="tns:GetDepSiXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveReSignXML">
+      <wsdl:input message="tns:SaveReSignXMLSoapIn" />
+      <wsdl:output message="tns:SaveReSignXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MergeReSignXML">
+      <wsdl:input message="tns:MergeReSignXMLSoapIn" />
+      <wsdl:output message="tns:MergeReSignXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SignWithHSM">
+      <wsdl:input message="tns:SignWithHSMSoapIn" />
+      <wsdl:output message="tns:SignWithHSMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatus">
+      <wsdl:input message="tns:UpdateStatusSoapIn" />
+      <wsdl:output message="tns:UpdateStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadChunk">
+      <wsdl:input message="tns:UploadChunkSoapIn" />
+      <wsdl:output message="tns:UploadChunkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadDepChunk">
+      <wsdl:input message="tns:UploadDepChunkSoapIn" />
+      <wsdl:output message="tns:UploadDepChunkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadChunk">
+      <wsdl:input message="tns:DownloadChunkSoapIn" />
+      <wsdl:output message="tns:DownloadChunkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadDepChunk">
+      <wsdl:input message="tns:DownloadDepChunkSoapIn" />
+      <wsdl:output message="tns:DownloadDepChunkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileSize">
+      <wsdl:input message="tns:GetFileSizeSoapIn" />
+      <wsdl:output message="tns:GetFileSizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepFileSize">
+      <wsdl:input message="tns:GetDepFileSizeSoapIn" />
+      <wsdl:output message="tns:GetDepFileSizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesList">
+      <wsdl:input message="tns:GetFilesListSoapIn" />
+      <wsdl:output message="tns:GetFilesListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DCPWSESoap" type="tns:DCPWSESoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getWordDocAttInfo">
+      <soap:operation soapAction="http://www.dsic.com.tw/getWordDocAttInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInDocAttInfo">
+      <soap:operation soapAction="http://www.dsic.com.tw/getInDocAttInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTempCaDetail">
+      <soap:operation soapAction="http://www.dsic.com.tw/updateTempCaDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMergeData">
+      <soap:operation soapAction="http://www.dsic.com.tw/getMergeData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiXML">
+      <soap:operation soapAction="http://www.dsic.com.tw/GetSiXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiExist">
+      <soap:operation soapAction="http://www.dsic.com.tw/SiExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepSiXML">
+      <soap:operation soapAction="http://www.dsic.com.tw/GetDepSiXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReSignXML">
+      <soap:operation soapAction="http://www.dsic.com.tw/SaveReSignXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MergeReSignXML">
+      <soap:operation soapAction="http://www.dsic.com.tw/MergeReSignXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignWithHSM">
+      <soap:operation soapAction="http://www.dsic.com.tw/SignWithHSM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatus">
+      <soap:operation soapAction="http://www.dsic.com.tw/UpdateStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadChunk">
+      <soap:operation soapAction="http://www.dsic.com.tw/UploadChunk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadDepChunk">
+      <soap:operation soapAction="http://www.dsic.com.tw/UploadDepChunk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadChunk">
+      <soap:operation soapAction="http://www.dsic.com.tw/DownloadChunk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadDepChunk">
+      <soap:operation soapAction="http://www.dsic.com.tw/DownloadDepChunk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileSize">
+      <soap:operation soapAction="http://www.dsic.com.tw/GetFileSize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepFileSize">
+      <soap:operation soapAction="http://www.dsic.com.tw/GetDepFileSize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesList">
+      <soap:operation soapAction="http://www.dsic.com.tw/GetFilesList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DCPWSESoap12" type="tns:DCPWSESoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getWordDocAttInfo">
+      <soap12:operation soapAction="http://www.dsic.com.tw/getWordDocAttInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInDocAttInfo">
+      <soap12:operation soapAction="http://www.dsic.com.tw/getInDocAttInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTempCaDetail">
+      <soap12:operation soapAction="http://www.dsic.com.tw/updateTempCaDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMergeData">
+      <soap12:operation soapAction="http://www.dsic.com.tw/getMergeData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiXML">
+      <soap12:operation soapAction="http://www.dsic.com.tw/GetSiXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiExist">
+      <soap12:operation soapAction="http://www.dsic.com.tw/SiExist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepSiXML">
+      <soap12:operation soapAction="http://www.dsic.com.tw/GetDepSiXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReSignXML">
+      <soap12:operation soapAction="http://www.dsic.com.tw/SaveReSignXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MergeReSignXML">
+      <soap12:operation soapAction="http://www.dsic.com.tw/MergeReSignXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignWithHSM">
+      <soap12:operation soapAction="http://www.dsic.com.tw/SignWithHSM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatus">
+      <soap12:operation soapAction="http://www.dsic.com.tw/UpdateStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadChunk">
+      <soap12:operation soapAction="http://www.dsic.com.tw/UploadChunk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadDepChunk">
+      <soap12:operation soapAction="http://www.dsic.com.tw/UploadDepChunk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadChunk">
+      <soap12:operation soapAction="http://www.dsic.com.tw/DownloadChunk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadDepChunk">
+      <soap12:operation soapAction="http://www.dsic.com.tw/DownloadDepChunk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileSize">
+      <soap12:operation soapAction="http://www.dsic.com.tw/GetFileSize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepFileSize">
+      <soap12:operation soapAction="http://www.dsic.com.tw/GetDepFileSize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesList">
+      <soap12:operation soapAction="http://www.dsic.com.tw/GetFilesList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DCPWSE">
+    <wsdl:port name="DCPWSESoap" binding="tns:DCPWSESoap">
+      <soap:address location="http://localhost:55642/DCPWSE.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DCPWSESoap12" binding="tns:DCPWSESoap12">
+      <soap12:address location="http://localhost:55642/DCPWSE.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
